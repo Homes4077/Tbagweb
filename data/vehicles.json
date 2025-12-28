@@ -1,0 +1,108 @@
+[
+    {
+        "id": "v001",
+        "make": "Toyota",
+        "model": "Aqua",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,500,000",
+        "condition_type": "Used",
+        "name": "Toyota Aqua 2018",
+        "contact_phone": "+254 722 123 456",
+        "contact_email": "aqua.v001@tbagdealers.com",
+        "images": [
+            "images/vehicle1-exterior-front.jpg",
+            "images/vehicle1-exterior-back.jpg",
+            "images/vehicle1-interior1.jpg",
+            "images/vehicle1-interior2.jpg",
+            "images/vehicle1-plate.jpg",
+            "images/vehicle1-engine.jpg"
+        ]
+    },
+    {
+        "id": "v002",
+        "make": "Honda",
+        "model": "Insight",
+        "type": "Sedan",
+        "fuel": "Hybrid",
+        "used": false,
+        "price_ksh": "3,200,000",
+        "condition_type": "New",
+        "name": "Honda Insight 2024",
+        "contact_phone": "+254 711 987 654",
+        "contact_email": "insight.v002@tbagdealers.com",
+        "images": [
+            "images/vehicle2-exterior-front.jpg",
+            "images/vehicle2-exterior-back.jpg",
+            "images/vehicle2-interior1.jpg",
+            "images/vehicle2-interior2.jpg",
+            "images/vehicle2-plate.jpg",
+            "images/vehicle2-engine.jpg"
+        ]
+    },
+    {
+        "id": "v003",
+        "make": "Nissan",
+        "model": "Note e-POWER",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,850,000",
+        "condition_type": "Modified",
+        "name": "Nissan Note e-POWER 2020 (Modified)",
+        "contact_phone": "+254 733 555 123",
+        "contact_email": "note.v003@tbagdealers.com",
+        "images": [
+            "images/vehicle3-exterior-front.jpg",
+            "images/vehicle3-exterior-back.jpg",
+            "images/vehicle3-interior1.jpg",
+            "images/vehicle3-interior2.jpg",
+            "images/vehicle3-plate.jpg",
+            "images/vehicle3-engine.jpg"
+        ]
+    }
+    ,
+    {
+        "id": "v004",
+        "make": "Subaru",
+        "model": "Forester e-Boxer",
+        "type": "SUV",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "3,500,000",
+        "condition_type": "Used",
+        "name": "Subaru Forester e-Boxer 2021",
+        "contact_phone": "+254 700 888 999",
+        "contact_email": "forester.v004@tbagdealers.com",
+        "images": [
+            "images/vehicle4-exterior-front.jpg",
+            "images/vehicle4-exterior-back.jpg",
+            "images/vehicle4-interior1.jpg",
+            "images/vehicle4-interior2.jpg",
+            "images/vehicle4-plate.jpg",
+            "images/vehicle4-engine.jpg"
+        ]
+    },
+    {
+        "id": "v005",
+        "make": "Mitsubishi",
+        "model": "Outlander PHEV",
+        "type": "SUV",
+        "fuel": "Plug-in Hybrid",
+        "used": true,
+        "price_ksh": "4,200,000",
+        "condition_type": "Used",
+        "name": "Mitsubishi Outlander PHEV 2019",
+        "contact_phone": "+254 721 345 678",
+        "contact_email": "outlander.v005@tbagdealers.com",
+        "images": [
+            "images/vehicle5-exterior-front.jpg",
+            "images/vehicle5-exterior-back.jpg",
+            "images/vehicle5-interior1.jpg",
+            "images/vehicle5-interior2.jpg",
+            "images/vehicle5-plate.jpg",
+            "images/vehicle5-engine.jpg"
+        ]
+    }
+]
