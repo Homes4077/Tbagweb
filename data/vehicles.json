@@ -62,47 +62,5 @@
             "images/vehicle3-engine.jpg"
         ]
     }
-    ,
-    {
-        "id": "v004",
-        "make": "Subaru",
-        "model": "Forester e-Boxer",
-        "type": "SUV",
-        "fuel": "Hybrid",
-        "used": true,
-        "price_ksh": "3,500,000",
-        "condition_type": "Used",
-        "name": "Subaru Forester e-Boxer 2021",
-        "contact_phone": "+254 757 782887",
-        "contact_email": "forester.v004@tbagdealers.com",
-        "images": [
-            "images/vehicle4-exterior-front.jpg",
-            "images/vehicle4-exterior-back.jpg",
-            "images/vehicle4-interior1.jpg",
-            "images/vehicle4-interior2.jpg",
-            "images/vehicle4-plate.jpg",
-            "images/vehicle4-engine.jpg"
-        ]
-    },
-    {
-        "id": "v005",
-        "make": "Mitsubishi",
-        "model": "Outlander PHEV",
-        "type": "SUV",
-        "fuel": "Plug-in Hybrid",
-        "used": true,
-        "price_ksh": "4,200,000",
-        "condition_type": "Used",
-        "name": "Mitsubishi Outlander PHEV 2019",
-        "contact_phone": "+254 757 782887",
-        "contact_email": "outlander.v005@tbagdealers.com",
-        "images": [
-            "images/vehicle5-exterior-front.jpg",
-            "images/vehicle5-exterior-back.jpg",
-            "images/vehicle5-interior1.jpg",
-            "images/vehicle5-interior2.jpg",
-            "images/vehicle5-plate.jpg",
-            "images/vehicle5-engine.jpg"
-        ]
-    }
+   
 ]
