@@ -66,7 +66,7 @@
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "630,000",
+        "price_ksh": "550,000",
         "condition_type": "Used",
         "name": "Vitz",
         "contact_phone": "+254 757 782887",
@@ -77,6 +77,24 @@
             "images/vehicle4-plate.jpg"
         ]
     },
+    {
+        "id": "v005",
+        "make": "Second Generation",
+        "model": "SG Series",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "930,000",
+        "condition_type": "Modified",
+        "name": "Subaru Forester Cross sports",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "note.v003@tbagdealers.com",
+        "images": [
+            "images/vehicle5-exterior-front.jpg",
+            "images/vehicle5-exterior-back.jpg",
+            "images/vehicle5-plate.jpg"
+        ]
+    }
     
    
 ]
