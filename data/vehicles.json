@@ -58,6 +58,25 @@
             "images/vehicle3-exterior-back.jpg",
             "images/vehicle3-plate.jpg"
         ]
-    }
+    },
+    {
+        "id": "v004",
+        "make": "Second  Generation",
+        "model": "XP90 Series",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "630,000",
+        "condition_type": "Used",
+        "name": "Vitz",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "note.v003@tbagdealers.com",
+        "images": [
+            "images/vehicle4-exterior-front.jpg",
+            "images/vehicle4-exterior-back.jpg",
+            "images/vehicle4-plate.jpg"
+        ]
+    },
+    
    
 ]
