@@ -69,8 +69,7 @@
         "contact_email": "note.v003@tbagdealers.com",
         "images": [
             "images/vehicle4-exterior-front.jpg",
-            "images/vehicle4-exterior-back.jpg",
-            "images/vehicle4-plate.jpg"
+            "images/vehicle4-exterior-back.jpg"
         ]
     },
     {
@@ -87,8 +86,7 @@
         "contact_email": "note.v003@tbagdealers.com",
         "images": [
             "images/vehicle5-exterior-front.jpg",
-            "images/vehicle5-exterior-back.jpg",
-            "images/vehicle5-plate.jpg"
+            "images/vehicle5-exterior-back.jpg"
         ]
     },
     {
@@ -104,9 +102,8 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "note.v003@tbagdealers.com",
         "images": [
-            "images/vehicle3-exterior-front.jpg",
-            "images/vehicle3-exterior-back.jpg",
-            "images/vehicle3-plate.jpg"
+            "images/vehicle7-exterior-front.jpg",
+            "images/vehicle7-exterior-back.jpg"
         ]
     }
     
