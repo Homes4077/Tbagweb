@@ -2,22 +2,18 @@
     {
         "id": "v001",
         "make": "Toyota",
-        "model": "Aqua",
+        "model": "XP60",
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "1,500,000",
+        "price_ksh": "550,000",
         "condition_type": "Used",
-        "name": "Toyota Aqua 2018",
+        "name": "Toyota IST",
         "contact_phone": "+254 757 782887",
         "contact_email": "aqua.v001@tbagdealers.com",
         "images": [
-            "images/vehicle1-exterior-front.jpg",
-            "images/vehicle1-exterior-back.jpg",
-            "images/vehicle1-interior1.jpg",
-            "images/vehicle1-interior2.jpg",
-            "images/vehicle1-plate.jpg",
-            "images/vehicle1.engine.jpg"
+            "images/vehicle6-exterior-front.jpg",
+            "images/vehicle6-exterior-back.jpg"
         ]
     },
     {
@@ -93,6 +89,24 @@
             "images/vehicle5-exterior-front.jpg",
             "images/vehicle5-exterior-back.jpg",
             "images/vehicle5-plate.jpg"
+        ]
+    },
+    {
+        "id": "v007",
+        "make": "Toyota",
+        "model": "M300",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "480,000",
+        "condition_type": "Used",
+        "name": "Toyota Passo",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "note.v003@tbagdealers.com",
+        "images": [
+            "images/vehicle3-exterior-front.jpg",
+            "images/vehicle3-exterior-back.jpg",
+            "images/vehicle3-plate.jpg"
         ]
     }
     
