@@ -105,7 +105,48 @@
             "images/vehicle7-exterior-front.jpg",
             "images/vehicle7-exterior-back.jpg"
         ]
+    },
+    {
+        "id": "v008",
+        "make": "2017",
+        "model": "Vezel",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "2,100,000",
+        "condition_type": "Used",
+        "name": "Honda Vezel 1500cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "note.v003@tbagdealers.com",
+        "images": [
+            "images/vehicle8-exterior-front.jpg",
+            "images/vehicle8-exterior-back.jpg",
+            "images/vehicle8-interior1.jpg",
+            "images/vehicle8-interior2.jpg",
+            "images/vehicle8-plate.jpg",
+            "images/vehicle8.engine.jpg"
+            
+        ]
+    },
+    {
+        "id": "v009",
+        "make": "Toyota",
+        "model": "XP170",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,500,000",
+        "condition_type": "Used,65000kms milage",
+        "name": "Toyota Sienta",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "note.v003@tbagdealers.com",
+        "images": [
+            "images/vehicle9-exterior-front.jpg",
+            "images/vehicle9-exterior-back.jpg",
+            "images/vehicle9-interior1.jpg",
+            "images/vehicle9-interior2.jpg",
+            "images/vehicle9-plate.jpg"
+        ]
     }
-    
    
 ]
