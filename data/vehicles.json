@@ -10,7 +10,7 @@
         "condition_type": "Used",
         "name": "Toyota IST",
         "contact_phone": "+254 757 782887",
-        "contact_email": "aqua.v001@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com ",
         "images": [
             "images/vehicle6-exterior-front.jpg",
             "images/vehicle6-exterior-back.jpg"
@@ -27,7 +27,7 @@
         "condition_type": "used",
         "name": "Honda fit",
         "contact_phone": "+254 757 782887",
-        "contact_email": "insight.v002@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com ",
         "images": [
             "images/vehicle2-exterior-front.jpg",
             "images/vehicle2-exterior-back.jpg",
@@ -48,7 +48,7 @@
         "condition_type": "Used",
         "name": "Suzuki swift",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com ",
         "images": [
             "images/vehicle3-exterior-front.jpg",
             "images/vehicle3-exterior-back.jpg",
@@ -66,7 +66,7 @@
         "condition_type": "Used",
         "name": "Vitz",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com ",
         "images": [
             "images/vehicle4-exterior-front.jpg",
             "images/vehicle4-exterior-back.jpg"
@@ -83,7 +83,7 @@
         "condition_type": "Modified",
         "name": "Subaru Forester Cross sports",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com ",
         "images": [
             "images/vehicle5-exterior-front.jpg",
             "images/vehicle5-exterior-back.jpg"
@@ -100,7 +100,7 @@
         "condition_type": "Used",
         "name": "Toyota Passo",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email":"tbagdealers@gmail.com ",
         "images": [
             "images/vehicle7-exterior-front.jpg",
             "images/vehicle7-exterior-back.jpg"
@@ -117,7 +117,7 @@
         "condition_type": "Used",
         "name": "Honda Vezel 1500cc",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email":"tbagdealers@gmail.com ",
         "images": [
             "images/vehicle8-exterior-front.jpg",
             "images/vehicle8-exterior-back.jpg",
@@ -141,7 +141,7 @@
         "condition_type": "Used,65000kms milage",
         "name": "Toyota Sienta",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com ",
         "images": [
             "images/vehicle9-exterior-front.jpg",
             "images/vehicle9-exterior-back.jpg",
@@ -156,7 +156,7 @@
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "630,000",
+        "price_ksh": "xxxxx",
         "condition_type": "DELIGHTS ORIGINAL ALLOY RIMS, millage 78320kms,Comes with accessories, for more info contact us",
         "name": "TOYOTA COROLLA FIELDER 1500cc KDW",
         "contact_phone": "+254 757 782887",
@@ -175,16 +175,16 @@
     },
     {
         "id": "v0011",
-        "make": "L Touring A",
-        "model": "swift",
+        "make": "TOYOTA",
+        "model": "AE100 series",
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
         "price_ksh": "450,000 Negotiable ",
         "condition_type": "Used",
-        "name": "Suzuki swift",
+        "name": "TOYOTA COROLLA L-Touring",
         "contact_phone": "+254 757 782887",
-        "contact_email": "note.v003@tbagdealers.com",
+        "contact_email": "tbagdealers@gmail.com",
         "images": [
             "images/vehicle11-exterior-front.jpg",
             "images/vehicle11-exterior-back.jpg",
@@ -198,3 +198,4 @@
     }
    
 ]
+ 
