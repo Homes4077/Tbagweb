@@ -166,7 +166,6 @@
             "images/vehicle10-exterior-back.jpg",
             "images/vehicle10-interior1.jpg",
             "images/vehicle10-interior2.jpg",
-            "images/vehicle10-plate.jpg",
             "images/vehicle10.engine.jpg",
             "images/vehicle10-exterior-face.jpg",
             "images/vehicle10.Tire.jpg",
@@ -181,15 +180,20 @@
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "630,000",
+        "price_ksh": "450,000 Negotiable ",
         "condition_type": "Used",
         "name": "Suzuki swift",
         "contact_phone": "+254 757 782887",
         "contact_email": "note.v003@tbagdealers.com",
         "images": [
-            "images/vehicle3-exterior-front.jpg",
-            "images/vehicle3-exterior-back.jpg",
-            "images/vehicle3-plate.jpg"
+            "images/vehicle11-exterior-front.jpg",
+            "images/vehicle11-exterior-back.jpg",
+            "images/vehicle11-interior1.jpg",
+            "images/vehicle11-interior2.jpg",
+            "images/vehicle11-plate.jpg",
+            "images/vehicle11.engine.jpg",
+            "images/vehicle11-exterior-face.jpg",
+            "images/vehicle10-exterior-back.jpg"
         ]
     }
    
