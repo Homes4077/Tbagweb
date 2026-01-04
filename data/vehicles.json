@@ -195,7 +195,29 @@
             "images/vehicle11-exterior-face.jpg",
             "images/vehicle11-exterior-back.jpg"
         ]
-    }
+     },
+        {
+        "id": "v0012",
+        "make": "TOYOTA",
+        "model": "FORESTER",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,350,000 ",
+        "condition_type": "Mint Condition",
+        "name": "SUBARU FORESTER 2000cc non turbo",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle12-exterior-front.jpg",
+            "images/vehicle12-exterior-back.jpg",
+            "images/vehicle12-interior1.jpg",
+            "images/vehicle12-interior2.jpg",
+            "images/vehicle12-plate.jpg",
+            "images/vehicle11-exterior-face.jpg"
+        ]
+     },
+    
    
 ]
  
