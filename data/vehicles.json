@@ -2,18 +2,19 @@
     {
         "id": "v001",
         "make": "Toyota",
-        "model": "XP60",
+        "model": "Swift Rs",
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "SOLD",
+        "price_ksh": "750,000 Negotiable",
         "condition_type": "Used",
-        "name": "Toyota IST",
+        "name": "Suzuki Swift Rs",
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com ",
         "images": [
-            "images/vehicle6-exterior-front.jpg",
-            "images/vehicle6-exterior-back.jpg"
+            "images/vehicle1-exterior-front.jpg",
+            "images/vehicle1-exterior-back.jpg",
+            "images/vehicle1-exterior-face.jpg"
         ]
     },
     {
