@@ -91,23 +91,6 @@
         ]
     },
     {
-        "id": "v007",
-        "make": "Toyota",
-        "model": "M300",
-        "type": "Hatchback",
-        "fuel": "Hybrid",
-        "used": true,
-        "price_ksh": "SOLD",
-        "condition_type": "Used",
-        "name": "Toyota Passo",
-        "contact_phone": "+254 757 782887",
-        "contact_email":"tbagdealers@gmail.com ",
-        "images": [
-            "images/vehicle7-exterior-front.jpg",
-            "images/vehicle7-exterior-back.jpg"
-        ]
-    },
-    {
         "id": "v008",
         "make": "2017",
         "model": "Vezel",
@@ -216,6 +199,30 @@
             "images/vehicle12-interior2.jpg",
             "images/vehicle12-plate.jpg",
             "images/vehicle12-exterior-face.jpg"
+        ]
+     },
+        {
+        "id": "v0013",
+        "make": "TOYOTA",
+        "model": "AE100 series",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "450,000 Negotiable ",
+        "condition_type": "Used",
+        "name": "TOYOTA COROLLA L-Touring",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle13-exterior-front.jpg",
+            "images/vehicle13-exterior-back.jpg",
+            "images/vehicle13-interior1.jpg",
+            "images/vehicle13-interior2.jpg",
+            "images/vehicle13-plate.jpg",
+            "images/vehicle13.engine.jpg",
+            "images/vehicle13-exterior-face.jpg",
+            "images/vehicle13-exterior-back.jpg",
+            "images/vehicle13-interior3.jpg.jpg"
         ]
      }
     
