@@ -1,4 +1,4 @@
-.... [
+[
     {
         "id": "v001",
         "make": "Toyota",
@@ -92,30 +92,6 @@
     },
     {
         "id": "v008",
-        "make": "2017",
-        "model": "Vezel",
-        "type": "Hatchback",
-        "fuel": "Hybrid",
-        "used": true,
-        "price_ksh": "SOLD",
-        "condition_type": "Used",
-        "name": "Honda Vezel 1500cc",
-        "contact_phone": "+254 757 782887",
-        "contact_email":"tbagdealers@gmail.com ",
-        "images": [
-            "images/vehicle8-exterior-front.jpg",
-            "images/vehicle8-exterior-back.jpg",
-            "images/vehicle8-interior1.jpg",
-            "images/vehicle8-interior2.jpg",
-            "images/vehicle8-plate.jpg",
-            "images/vehicle8.engine.jpg",
-            "images/vehicle8-exterior-face.jpg"
-            
-            
-        ]
-    },
-    {
-        "id": "v009",
         "make": "Toyota",
         "model": "XP170",
         "type": "Hatchback",
@@ -134,7 +110,7 @@
         ]
     },
     {
-        "id": "v0010",
+        "id": "v009",
         "make": "Fielder 2018/10 Drive",
         "model": "DAA-NKE165G",
         "type": "Hatchback",
@@ -158,7 +134,7 @@
         ]
     },
     {
-        "id": "v0011",
+        "id": "v0010",
         "make": "TOYOTA",
         "model": "AE100 series",
         "type": "Hatchback",
@@ -181,7 +157,7 @@
         ]
      },
         {
-        "id": "v0012",
+        "id": "v0011",
         "make": "TOYOTA",
         "model": "FORESTER",
         "type": "Hatchback",
@@ -202,7 +178,7 @@
         ]
      },
         {
-        "id": "v0013",
+        "id": "v0012",
         "make": "TOYOTA",
         "model": "COROLLA",
         "type": "Hatchback",
@@ -223,6 +199,32 @@
             "images/vehicle13-exterior-face.jpg",
             "images/vehicle13-exterior-back.jpg",
             "images/vehicle13-interior3.jpg"
+        ]
+     },
+        {
+        "id": "v0013",
+        "make": "TOYOTA",
+        "model": "HIACE",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "2,450,000 ",
+        "condition_type": "Turbo charged automatic transmission 1 kd Engine",
+        "name": "TOYOTA HIACE 7L 3000cc diesel",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle14-exterior-front.jpg",
+            "images/vehicle14-exterior-back.jpg",
+            "images/vehicle14-interior1.jpg",
+            "images/vehicle14-interior2.jpg",
+            "images/vehicle14-plate.jpg",
+            "images/vehicle14.engine.jpg",
+            "images/vehicle14-exterior-face.jpg",
+            "images/vehicle14-exterior-trunk.jpg",
+            "images/vehicle14-exterior-side.jpg",
+            "images/vehicle14-exterior-back.jpg"
+            
         ]
      }
     
