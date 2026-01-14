@@ -226,6 +226,29 @@
             "images/vehicle14-exterior-back.jpg"
             
         ]
+     },
+        {
+        "id": "v0014",
+        "make": "TOYOTA",
+        "model": "AE100 series",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "450,000 Negotiable ",
+        "condition_type": "Used",
+        "name": "TOYOTA COROLLA L-Touring",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle15-interior1.jpg",
+            "images/vehicle15-interior2.jpg",
+            "images/vehicle15-plate.jpg",
+            "images/vehicle15.engine.jpg",
+            "images/vehicle15-exterior-front.jpg",
+            "images/vehicle15-exterior-back.jpg",
+            "images/vehicle15-exterior-face.jpg",
+            "images/vehicle15-exterior-trunk.jpg"
+        ]
      }
     
    
