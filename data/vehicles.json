@@ -249,6 +249,27 @@
             "images/vehicle15-exterior-face.jpg",
             "images/vehicle15-exterior-trunk.jpg"
         ]
+     },
+        {
+        "id": "v0015",
+        "make": "SUBARU",
+        "model": "IMPREZA",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "680,000",
+        "condition_type": "Used,Ready Documents BUY & DRIVE",
+        "name": "SUBARU IMPREZA",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle16-interior1.jpg",
+            "images/vehicle16-interior2.jpg",
+            "images/vehicle16-exterior-front.jpg",
+            "images/vehicle16-exterior-back.jpg",
+            "images/vehicle16-exterior-face.jpg",
+            "images/vehicle16-plate.jpg"     
+        ]
      }
     
    
