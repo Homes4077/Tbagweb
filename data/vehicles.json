@@ -30,12 +30,12 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com ",
         "images": [
-            "images/vehicle2-exterior-front.jpg",
-            "images/vehicle2-exterior-back.jpg",
             "images/vehicle2-interior1.jpg",
             "images/vehicle2-interior2.jpg",
             "images/vehicle2-plate.jpg",
-            "images/vehicle2.engine.jpg"
+            "images/vehicle2.engine.jpg",
+            "images/vehicle2-exterior-front.jpg",
+            "images/vehicle2-exterior-back.jpg"
         ]
     },
     {
@@ -45,7 +45,7 @@
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "630,000",
+        "price_ksh": "630,000,Negotiable",
         "condition_type": "Used",
         "name": "Suzuki swift",
         "contact_phone": "+254 757 782887",
@@ -110,10 +110,10 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com ",
         "images": [
-            "images/vehicle9-exterior-front.jpg",
-            "images/vehicle9-exterior-back.jpg",
             "images/vehicle9-interior1.jpg",
-            "images/vehicle9-plate.jpg"
+            "images/vehicle9-plate.jpg",
+            "images/vehicle9-exterior-front.jpg",
+            "images/vehicle9-exterior-back.jpg"
         ]
     },
     {
@@ -129,14 +129,14 @@
         "contact_phone": "+254 757 782887",
         "contact_email":"tbagdealers@gmail.com ",
         "images": [
-            "images/vehicle10-exterior-front.jpg",
-            "images/vehicle10-exterior-back.jpg",
             "images/vehicle10-interior1.jpg",
             "images/vehicle10-interior2.jpg",
             "images/vehicle10.engine.jpg",
             "images/vehicle10-exterior-face.jpg",
             "images/vehicle10.Tire.jpg",
-            "images/vehicle10.Trunck.jpg"
+            "images/vehicle10.Trunck.jpg",
+            "images/vehicle10-exterior-front.jpg",
+            "images/vehicle10-exterior-back.jpg"
             
         ]
     },
@@ -153,14 +153,14 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com",
         "images": [
-            "images/vehicle11-exterior-front.jpg",
-            "images/vehicle11-exterior-back.jpg",
             "images/vehicle11-interior1.jpg",
             "images/vehicle11-interior2.jpg",
             "images/vehicle11-plate.jpg",
             "images/vehicle11.engine.jpg",
             "images/vehicle11-exterior-face.jpg",
+            "images/vehicle11-exterior-front.jpg",
             "images/vehicle11-exterior-back.jpg"
+        
         ]
      },
         {
@@ -176,12 +176,12 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com",
         "images": [
-            "images/vehicle12-exterior-front.jpg",
-            "images/vehicle12-exterior-back.jpg",
             "images/vehicle12-interior1.jpg",
             "images/vehicle12-interior2.jpg",
             "images/vehicle12-plate.jpg",
-            "images/vehicle12-exterior-face.jpg"
+            "images/vehicle12-exterior-face.jpg",
+            "images/vehicle12-exterior-front.jpg",
+            "images/vehicle12-exterior-back.jpg"
         ]
      },
         {
@@ -197,15 +197,14 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com",
         "images": [
-            "images/vehicle13-exterior-front.jpg",
-            "images/vehicle13-exterior-back.jpg",
             "images/vehicle13-interior1.jpg",
             "images/vehicle13-interior2.jpg",
             "images/vehicle13-plate.jpg",
             "images/vehicle13.engine.jpg",
             "images/vehicle13-exterior-face.jpg",
-            "images/vehicle13-exterior-back.jpg",
-            "images/vehicle13-interior3.jpg"
+            "images/vehicle13-interior3.jpg",
+            "images/vehicle13-exterior-front.jpg",
+            "images/vehicle13-exterior-back.jpg"
         ]
      },
         {
@@ -221,8 +220,6 @@
         "contact_phone": "+254 757 782887",
         "contact_email": "tbagdealers@gmail.com",
         "images": [
-            "images/vehicle14-exterior-front.jpg",
-            "images/vehicle14-exterior-back.jpg",
             "images/vehicle14-interior1.jpg",
             "images/vehicle14-interior2.jpg",
             "images/vehicle14-plate.jpg",
@@ -230,6 +227,7 @@
             "images/vehicle14-exterior-face.jpg",
             "images/vehicle14-exterior-trunk.jpg",
             "images/vehicle14-exterior-side.jpg",
+            "images/vehicle14-exterior-front.jpg",
             "images/vehicle14-exterior-back.jpg"
             
         ]
