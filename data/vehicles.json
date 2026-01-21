@@ -53,7 +53,14 @@
         "images": [
             "images/vehicle3-exterior-front.jpg",
             "images/vehicle3-exterior-back.jpg",
-            "images/vehicle3-plate.jpg"
+            "images/vehicle3-plate.jpg",
+            "images/vehicle3-exterior-wash.jpg",
+            "images/vehicle3-face.jpg",
+            "images/vehicle3-interior2.jpg",
+            "images/vehicle3-interior3.jpg",
+            "images/vehicle3-interior4.jpg",
+            "images/vehicle3-interior5.jpg",
+            "images/vehicle3-back.jpg"
         ]
     },
     {
