@@ -275,7 +275,32 @@
             "images/vehicle16-exterior-face.jpg",
             "images/vehicle16-plate.jpg"     
         ]
-     }
+     },
+    
+        {
+        "id": "v0016",
+        "make": "TOYOTA",
+        "model": "ALLION",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "1400000 Negotiable ",
+        "condition_type": "Turbo charged automatic transmission 1 kd Engine",
+        "name": "TOYOTA ALLION 1800cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle17-interior1.jpg",
+            "images/vehicle17-interior2.jpg",
+            "images/vehicle17-plate.jpg",
+            "images/vehicle17.engine.jpg",
+            "images/vehicle17-exterior-face.jpg",
+            "images/vehicle17-exterior-side.jpg",
+            "images/vehicle17-exterior-front.jpg",
+            "images/vehicle17-exterior-back.jpg"
+            
+        ]
+            }
     
    
 ]
