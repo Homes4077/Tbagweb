@@ -75,3 +75,4 @@ section { background: var(--card-bg); padding: 2rem; margin-bottom: 2rem; border
 .button { display: inline-block; background: var(--accent-color); color: var(--dark-text); padding: 0.8rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 700; margin-top: 1rem; }
 
 footer { background: var(--background-dark); color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+
