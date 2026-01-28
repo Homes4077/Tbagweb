@@ -1,4 +1,27 @@
 [
+          {
+        "id": "v0017",
+        "make": "TOYOTA",
+        "model": "HIACE",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "7,000,000 ",
+        "condition_type": "NEW ,COMMUTER REGISTRATION YEAR:2020 ,ENGINE NO: 1GD4849016",
+        "name": "TOYOTA HIACE 10L ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle18-exterior-front.jpg",
+            "images/vehicle18-exterior-back.jpg",
+            "images/vehicle18-exterior-face.jpg",
+            "images/vehicle18-exterior-side.jpg",
+            "images/vehicle18-interior1.jpg",
+            "images/vehicle18-interior2.jpg",
+            "images/vehicle18-plate.jpg",
+            
+        ]
+            },
  
     {
         "id": "v0016",
