@@ -4,21 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TBAG HYBRID MOTORS SPECIALIST</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
   <header>
-    <div>
-      <img src="images/logo.png" alt="TBAG HYBRID MOTORS SPECIALIST Logo" width="80">
+    <div class="header-logo-container">
+      <img src="images/logo.png" alt="TBAG HYBRID MOTORS SPECIALIST Logo" class="header-logo">
       <h1>TBAG HYBRID MOTORS SPECIALIST</h1>
     </div>
-
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#vehicles">Our Vehicles</a></li>
-        <li><a href="#battery">Battery Replacement</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
@@ -26,85 +23,95 @@
   </header>
 
   <main>
-
-    <section id="home">
+    <section id="home" class="hero">
       <h2>Your Journey to Sustainable Driving Starts Here.</h2>
       <p>
-        Discover a wide range of new and modified hybrid cars. We also offer
-        professional hybrid battery replacement services.
-        ONLY at TBAG HYBRID MOTORS SPECIALIST, owned by Cyrus Maina.
+        Discover a wide range of new and modified hybrid cars additionally we offer
+        Hybrid battery replacement. ONLY at TBAG HYBRID MOTORS SPECIALIST, owned by Cyrus Maina.
       </p>
-      <a href="#vehicles">View Our Cars</a>
+      <a href="#vehicles" class="button">View Our Cars</a>
     </section>
+
+    <!-- SITE GUIDE SECTION -->
+    <section id="site-guide">
+      <h2>How to Use This Website</h2>
+
+      <p>
+        This guide will help you navigate our website and view our hybrid vehicles easily.
+      </p>
+
+      <h3>Browsing Vehicles</h3>
+      <p>
+        Scroll down to the <strong>Our Available Hybrid Cars</strong> section to view all
+        vehicles currently available.
+      </p>
+
+      <h3>Viewing More Images</h3>
+      <p>
+        Each vehicle includes multiple images. Slide left or right on the images
+        to see more photos of the selected car.
+      </p>
+
+      <h3>Zooming Images</h3>
+      <p>
+        Click on any vehicle image to open a clearer, zoomed-in view for better inspection.
+      </p>
+
+      <h3>Getting More Details</h3>
+      <p>
+        Tap on a vehicle card to view additional information and clearer images.
+      </p>
+
+      <h3>Contacting Us</h3>
+      <p>
+        If you are interested in a vehicle, scroll down to the
+        <strong>Contact Us</strong> section to call or email us directly.
+      </p>
+    </section>
+    <!-- END SITE GUIDE -->
 
     <section id="vehicles">
       <h2>Our Available Hybrid Cars</h2>
-      <div id="vehicle-cards-container">
-        <!-- Vehicle cards loaded by JavaScript -->
+      <div id="vehicle-cards-container" class="vehicle-listing">
       </div>
     </section>
-
-    <!-- BATTERY REPLACEMENT SECTION -->
-    <section id="battery">
-      <h2>Hybrid Battery Replacement</h2>
-
-      <p>
-        We specialize in servicing and replacement of high-voltage hybrid batteries
-        using safe, professional procedures.
-      </p>
-
-      <img 
-        src="images/hybrid-battery.jpg" 
-        alt="Hybrid High Voltage Battery Pack"
-        width="100%"
-      >
-
-      <h3>Hybrid High-Voltage Battery Pack (HV Battery)</h3>
-
-      <p>
-        This is the main traction battery used in hybrid vehicles such as
-        Toyota Prius and other Toyota hybrid models. It supplies high-voltage
-        electrical power for electric driving and energy regeneration.
-      </p>
-    </section>
-    <!-- END BATTERY REPLACEMENT -->
 
     <section id="about">
       <h2>About TBAG HYBRID MOTORS SPECIALIST</h2>
       <p>
-        We are a registered <strong>Hybrid Motor Vehicle Specialist</strong>
-        based in Nyeri, Kenya.
+        We are a registered <strong>Hybrid Motor Vehicle Specialist</strong> based in Nyeri, Kenya.
       </p>
-
-      <p><strong>Official Registration:</strong> BN-36SMYM50</p>
-      <p><strong>Entity Status:</strong> Active</p>
-      <p><strong>Registered Since:</strong> December 22, 2025</p>
+      
+      <div class="registration-info" style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; display: inline-block;">
+        <p><strong>Official Registration:</strong> BN-36SMYM50</p>
+        <p><strong>Entity Status:</strong> <span style="color: #28a745; font-weight: bold;">Active</span></p>
+        <p><strong>Registered Since:</strong> December 22, 2025</p>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contact Us</h2>
-
       <p>
         <strong>Phone:</strong>
         <a href="tel:+254757782887">+254757782887</a>
       </p>
-
       <p>
         <strong>Email:</strong>
         <a href="mailto:cyrusmaina075@gmail.com">cyrusmaina075@gmail.com</a>
       </p>
     </section>
-
   </main>
 
+  <div id="image-zoom-overlay" class="zoom-overlay">
+    <img src="" alt="Zoomed view">
+  </div>
+
   <footer>
-    <p>
-      &copy; 2026 TBAG HYBRID MOTORS SPECIALIST. 
-      All rights reserved. Developed by JohnMark Gitahi
-    </p>
+    <p>&copy; 2026 TBAG HYBRID MOTORS SPECIALIST. All rights reserved. Developed by JohnMark Gitahi</p>
   </footer>
 
-  <script src="script.js"></script>
+  <div id="error-log" style="color:red; padding:10px;"></div>
 
+  <script src="script.js"></script>
 </body>
-  </html>
+</html>
