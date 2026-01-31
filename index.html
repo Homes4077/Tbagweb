@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>TBAG HYBRID MOTORS SPECIALIST</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Inline styles for the new Battery Section to ensure it looks great immediately */
+    .service-section {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .service-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .service-image img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+    .service-image img:hover {
+      transform: scale(1.02);
+    }
+    .service-text {
+      flex: 1;
+      min-width: 300px;
+      text-align: left;
+    }
+    .service-text h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    .service-list {
+      list-style: none;
+      padding: 0;
+    }
+    .service-list li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+    }
+    .service-list li::before {
+      content: "✓";
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,6 +68,7 @@
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#vehicles">Our Vehicles</a></li>
+        <li><a href="#battery-service">Battery Replacement</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
@@ -26,61 +79,51 @@
     <section id="home" class="hero">
       <h2>Your Journey to Sustainable Driving Starts Here.</h2>
       <p>
-        Discover a wide range of new and modified hybrid cars additionally we offer
-        Hybrid battery replacement. ONLY at TBAG HYBRID MOTORS SPECIALIST, owned by Cyrus Maina.
+        Discover a wide range of new and modified hybrid cars. Additionally, we offer
+        professional Hybrid battery replacement. ONLY at TBAG HYBRID MOTORS SPECIALIST, owned by Cyrus Maina.
       </p>
       <a href="#vehicles" class="button">View Our Cars</a>
     </section>
 
-    <!-- SITE GUIDE SECTION -->
+    <section id="battery-service" class="service-section">
+      <div class="service-container">
+        <div class="service-image">
+          <img src="images/hybrid-battery-service.jpg" alt="Hybrid Battery Replacement Service">
+        </div>
+        <div class="service-text">
+          <h2>Hybrid Battery Replacement</h2>
+          <p>We specialize in professional diagnostics and replacement of high-voltage hybrid batteries. Ensure your vehicle maintains peak fuel efficiency and performance with our expert services.</p>
+          <ul class="service-list">
+            <li>Available at a Fair Price</li>
+            <li>Expert Cell Balancing & Testing</li>
+            <li>High-Quality Replacement Modules</li>
+            <li>Fast Turnaround Time</li>
+          </ul>
+          <a href="#contact" class="button" style="background-color: #28a745; margin-top: 15px;">Book a Service</a>
+        </div>
+      </div>
+    </section>
+
     <section id="site-guide">
       <h2>How to Use This Website</h2>
-
-      <p>
-        This guide will help you navigate our website and view our hybrid vehicles easily.
-      </p>
-
+      <p>This guide will help you navigate our website and view our hybrid vehicles easily.</p>
       <h3>Browsing Vehicles</h3>
-      <p>
-        Scroll down to the <strong>Our Available Hybrid Cars</strong> section to view all
-        vehicles currently available.
-      </p>
-
+      <p>Scroll down to the <strong>Our Available Hybrid Cars</strong> section to view all vehicles currently available.</p>
       <h3>Viewing More Images</h3>
-      <p>
-        Each vehicle includes multiple images. Slide left or right on the images
-        to see more photos of the selected car.
-      </p>
-
-      <h3>Zooming Images</h3>
-      <p>
-        Click on any vehicle image to open a clearer, zoomed-in view for better inspection.
-      </p>
-
-      <h3>Getting More Details</h3>
-      <p>
-        Tap on a vehicle card to view additional information and clearer images.
-      </p>
-
+      <p>Each vehicle includes multiple images. Slide left or right on the images to see more photos.</p>
       <h3>Contacting Us</h3>
-      <p>
-        If you are interested in a vehicle, scroll down to the
-        <strong>Contact Us</strong> section to call or email us directly.
-      </p>
+      <p>If you are interested in a vehicle or battery service, scroll to the <strong>Contact Us</strong> section.</p>
     </section>
-    <!-- END SITE GUIDE -->
 
     <section id="vehicles">
       <h2>Our Available Hybrid Cars</h2>
       <div id="vehicle-cards-container" class="vehicle-listing">
-      </div>
+        </div>
     </section>
 
     <section id="about">
       <h2>About TBAG HYBRID MOTORS SPECIALIST</h2>
-      <p>
-        We are a registered <strong>Hybrid Motor Vehicle Specialist</strong> based in Nyeri, Kenya.
-      </p>
+      <p>We are a registered <strong>Hybrid Motor Vehicle Specialist</strong> based in Nyeri, Kenya.</p>
       
       <div class="registration-info" style="margin-top: 20px; padding: 15px; border: 1px solid #ddd; border-radius: 8px; display: inline-block;">
         <p><strong>Official Registration:</strong> BN-36SMYM50</p>
@@ -91,14 +134,8 @@
 
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>
-        <strong>Phone:</strong>
-        <a href="tel:+254757782887">+254757782887</a>
-      </p>
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:cyrusmaina075@gmail.com">cyrusmaina075@gmail.com</a>
-      </p>
+      <p><strong>Phone:</strong> <a href="tel:+254757782887">+254757782887</a></p>
+      <p><strong>Email:</strong> <a href="mailto:cyrusmaina075@gmail.com">cyrusmaina075@gmail.com</a></p>
     </section>
   </main>
 
