@@ -26,11 +26,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         imageHtml += '</div>';
 
+        // SOLD FEATURE LOGIC
+        let priceDisplay = '';
+        if (vehicle.price_ksh.toUpperCase() === "SOLD") {
+          priceDisplay = `
+            <div class="sold-container">
+              <div class="sold-marquee">
+                SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — UNIT NO LONGER AVAILABLE
+              </div>
+            </div>`;
+        } else {
+          priceDisplay = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
+        }
+
         vehicleCard.innerHTML = `
           <h3>${vehicle.name}</h3>
           ${imageHtml}
           <div class="vehicle-details">
-            <p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>
+            ${priceDisplay}
             <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
             <div class="contact-info">
               <p><strong>Phone:</strong> ${vehicle.contact_phone}</p>
@@ -44,7 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
       setupCarouselAndZoom();
     })
     .catch(err => {
-      document.getElementById('error-log').textContent = "Error: " + err.message;
+      const errorLog = document.getElementById('error-log');
+      if (errorLog) errorLog.textContent = "Error: " + err.message;
     });
 });
 
@@ -54,7 +68,7 @@ function setupCarouselAndZoom() {
 
   const zoomImg = overlay.querySelector('img');
 
-  /* --- ZOOM LOGIC WITH BACK BUTTON FIX --- */
+  /* --- ZOOM LOGIC --- */
   document.addEventListener('click', (e) => {
     const img = e.target.closest('.vehicle-images img');
     if (!img) return;
@@ -63,8 +77,6 @@ function setupCarouselAndZoom() {
     zoomImg.src = img.src;
     overlay.style.display = 'flex';
     document.body.style.overflow = 'hidden';
-
-    // Add virtual state to history
     window.history.pushState({ zoomed: true }, "");
   });
 
@@ -74,7 +86,6 @@ function setupCarouselAndZoom() {
   };
 
   overlay.addEventListener('click', () => {
-    // Going back will trigger the popstate event below
     if (window.history.state && window.history.state.zoomed) {
       window.history.back();
     } else {
@@ -82,7 +93,6 @@ function setupCarouselAndZoom() {
     }
   });
 
-  // This handles the hardware 'Back' button on your phone
   window.addEventListener('popstate', () => {
     closeZoomView();
   });
@@ -105,3 +115,4 @@ function setupCarouselAndZoom() {
     }
   });
 }
+
