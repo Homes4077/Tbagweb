@@ -27,23 +27,23 @@ document.addEventListener('DOMContentLoaded', () => {
         imageHtml += '</div>';
 
         // SOLD FEATURE LOGIC
-        let priceHtml = '';
+        let priceSection = '';
         if (vehicle.price_ksh && vehicle.price_ksh.toString().toUpperCase() === "SOLD") {
-          priceHtml = `
+          priceSection = `
             <div class="sold-container">
               <div class="sold-marquee">
-                SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — VISIT DEALER FOR MORE
+                SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — VISIT DEALER FOR SIMILAR UNITS
               </div>
             </div>`;
         } else {
-          priceHtml = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
+          priceSection = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
         }
 
         vehicleCard.innerHTML = `
           <div class="vehicle-details">
             <h3>${vehicle.name}</h3>
             ${imageHtml}
-            ${priceHtml}
+            ${priceSection}
             <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
             <div class="contact-info">
               <p><strong>Phone:</strong> ${vehicle.contact_phone}</p>
@@ -57,25 +57,27 @@ document.addEventListener('DOMContentLoaded', () => {
       setupCarouselAndZoom();
     })
     .catch(err => {
-      console.error("Error:", err);
+      console.error("Fetch Error:", err);
     });
 });
 
 function setupCarouselAndZoom() {
   const overlay = document.getElementById('image-zoom-overlay');
   if (!overlay) return; 
+
   const zoomImg = overlay.querySelector('img');
 
-  /* --- OPEN VEHICLE FULLY ON TAP --- */
+  /* --- FULL VIEW OPEN LOGIC (TAP TO SEE FULL CAR) --- */
   document.addEventListener('click', (e) => {
     const img = e.target.closest('.vehicle-images img');
     if (!img) return;
 
     e.stopPropagation();
     zoomImg.src = img.src;
-    overlay.style.display = 'flex'; // Opens the fullscreen view
-    document.body.style.overflow = 'hidden'; // Prevents scrolling behind the image
+    overlay.style.display = 'flex'; // Opens the overlay
+    document.body.style.overflow = 'hidden'; // Prevents scrolling background
 
+    // Back button history state
     window.history.pushState({ zoomed: true }, "");
   });
 
@@ -96,7 +98,7 @@ function setupCarouselAndZoom() {
     closeZoomView();
   });
 
-  /* --- DOT NAVIGATION LOGIC --- */
+  /* --- DOT NAVIGATION --- */
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('.image-nav button');
     if (!btn) return;
@@ -107,8 +109,10 @@ function setupCarouselAndZoom() {
     
     if (container) {
       const width = container.offsetWidth;
-      container.scrollTo({ left: width * index, behavior: 'smooth' });
+      container.scrollTo({
+        left: width * index,
+        behavior: 'smooth'
+      });
     }
   });
 }
-
