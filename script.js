@@ -26,24 +26,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         imageHtml += '</div>';
 
-        // SOLD FEATURE LOGIC
-        let priceDisplay = '';
-        if (vehicle.price_ksh.toUpperCase() === "SOLD") {
-          priceDisplay = `
+        // --- START SOLD FEATURE LOGIC ---
+        let priceHtml = '';
+        if (vehicle.price_ksh && vehicle.price_ksh.toString().toUpperCase() === "SOLD") {
+          priceHtml = `
             <div class="sold-container">
               <div class="sold-marquee">
                 SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — UNIT NO LONGER AVAILABLE
               </div>
             </div>`;
         } else {
-          priceDisplay = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
+          priceHtml = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
         }
+        // --- END SOLD FEATURE LOGIC ---
 
         vehicleCard.innerHTML = `
           <h3>${vehicle.name}</h3>
           ${imageHtml}
           <div class="vehicle-details">
-            ${priceDisplay}
+            ${priceHtml}
             <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
             <div class="contact-info">
               <p><strong>Phone:</strong> ${vehicle.contact_phone}</p>
@@ -53,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(vehicleCard);
       });
 
-      // 2. INITIALIZE ZOOM & NAVIGATION
+      // 2. INITIALIZE ZOOM & NAVIGATION (Remaining untouched)
       setupCarouselAndZoom();
     })
     .catch(err => {
@@ -68,7 +69,7 @@ function setupCarouselAndZoom() {
 
   const zoomImg = overlay.querySelector('img');
 
-  /* --- ZOOM LOGIC --- */
+  /* --- ZOOM LOGIC WITH BACK BUTTON FIX --- */
   document.addEventListener('click', (e) => {
     const img = e.target.closest('.vehicle-images img');
     if (!img) return;
@@ -77,6 +78,8 @@ function setupCarouselAndZoom() {
     zoomImg.src = img.src;
     overlay.style.display = 'flex';
     document.body.style.overflow = 'hidden';
+
+    // Add virtual state to history
     window.history.pushState({ zoomed: true }, "");
   });
 
@@ -115,4 +118,3 @@ function setupCarouselAndZoom() {
     }
   });
 }
-
