@@ -26,24 +26,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         imageHtml += '</div>';
 
-        // --- START SOLD FEATURE LOGIC ---
+        // SOLD FEATURE LOGIC
         let priceHtml = '';
         if (vehicle.price_ksh && vehicle.price_ksh.toString().toUpperCase() === "SOLD") {
           priceHtml = `
             <div class="sold-container">
               <div class="sold-marquee">
-                SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — UNIT NO LONGER AVAILABLE
+                SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — VISIT DEALER FOR MORE
               </div>
             </div>`;
         } else {
           priceHtml = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
         }
-        // --- END SOLD FEATURE LOGIC ---
 
         vehicleCard.innerHTML = `
-          <h3>${vehicle.name}</h3>
-          ${imageHtml}
           <div class="vehicle-details">
+            <h3>${vehicle.name}</h3>
+            ${imageHtml}
             ${priceHtml}
             <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
             <div class="contact-info">
@@ -54,32 +53,29 @@ document.addEventListener('DOMContentLoaded', () => {
         container.appendChild(vehicleCard);
       });
 
-      // 2. INITIALIZE ZOOM & NAVIGATION (Remaining untouched)
+      // 2. INITIALIZE ZOOM & NAVIGATION
       setupCarouselAndZoom();
     })
     .catch(err => {
-      const errorLog = document.getElementById('error-log');
-      if (errorLog) errorLog.textContent = "Error: " + err.message;
+      console.error("Error:", err);
     });
 });
 
 function setupCarouselAndZoom() {
   const overlay = document.getElementById('image-zoom-overlay');
   if (!overlay) return; 
-
   const zoomImg = overlay.querySelector('img');
 
-  /* --- ZOOM LOGIC WITH BACK BUTTON FIX --- */
+  /* --- OPEN VEHICLE FULLY ON TAP --- */
   document.addEventListener('click', (e) => {
     const img = e.target.closest('.vehicle-images img');
     if (!img) return;
 
     e.stopPropagation();
     zoomImg.src = img.src;
-    overlay.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    overlay.style.display = 'flex'; // Opens the fullscreen view
+    document.body.style.overflow = 'hidden'; // Prevents scrolling behind the image
 
-    // Add virtual state to history
     window.history.pushState({ zoomed: true }, "");
   });
 
@@ -100,7 +96,7 @@ function setupCarouselAndZoom() {
     closeZoomView();
   });
 
-  /* --- DOT NAVIGATION --- */
+  /* --- DOT NAVIGATION LOGIC --- */
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('.image-nav button');
     if (!btn) return;
@@ -111,10 +107,8 @@ function setupCarouselAndZoom() {
     
     if (container) {
       const width = container.offsetWidth;
-      container.scrollTo({
-        left: width * index,
-        behavior: 'smooth'
-      });
+      container.scrollTo({ left: width * index, behavior: 'smooth' });
     }
   });
 }
+
