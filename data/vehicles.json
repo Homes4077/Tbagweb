@@ -1,4 +1,29 @@
 [ 
+
+          {
+        "id": "v0023",
+        "make": "TOYOTA",
+        "model": "110",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "550,000 ,NEGOTIABLE ",
+        "condition_type": "Mint Condition, Fabric Seats, Accident free",
+        "name": "TOYOTA 110 1500cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle24-exterior-face.jpg",
+            "images/vehicle24-interior2.jpg",
+            "images/vehicle24-interior1.jpg",
+            "images/vehicle24.engine.jpg",
+            "images/vehicle24-plate.jpg",
+            "images/vehicle24-exterior-side.jpg",
+            "images/vehicle24-exterior-front.jpg",
+            "images/vehicle24-exterior-back.jpg"
+            
+        ]
+            },
           
           {
         "id": "v0022",
