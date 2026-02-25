@@ -1,4 +1,28 @@
 [ 
+          
+          {
+        "id": "v0024",
+        "make": "TOYOTA",
+        "model": "Fielder",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "1,679,000",
+        "condition_type": "Original Paint,Mint Condition,ReadyDocuments",
+        "name": "TOYOTA FIELDER 2016 ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle25-exterior-face.jpg",
+            "images/vehicle25-interior1.jpg",
+            "images/vehicle25.engine.jpg",
+            "images/vehicle25-exterior-side.jpg",
+            "images/vehicle25-plate.jpg",
+            "images/vehicle25-exterior-front.jpg",
+            "images/vehicle25-exterior-back.jpg"
+            
+        ]
+            },
 
           {
         "id": "v0023",
@@ -7,7 +31,7 @@
         "type": "Hatchback",
         "fuel": "Diesel",
         "used": true,
-        "price_ksh": "550,000 ,NEGOTIABLE ",
+        "price_ksh": "SOLD ",
         "condition_type": "Mint Condition, Fabric Seats, Accident free",
         "name": "TOYOTA 110 1500cc ",
         "contact_phone": "+254 757 782887",
