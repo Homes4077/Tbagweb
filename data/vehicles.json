@@ -1,4 +1,30 @@
 [ 
+        
+          {
+        "id": "v0027",
+        "make": "TOYOTA",
+        "model": "VITZ",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "580,000 ,NEGOTIABLE",
+        "condition_type": "MINT CONDITION, LEATHER SEATS",
+        "name": "TOYOTA VITZ 2008 1000cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle28-exterior-face.jpg",
+            "images/vehicle28-interior2.jpg",
+            "images/vehicle28-interior1.jpg",
+            "images/vehicle28.engine.jpg",
+            "images/vehicle28-exterior-side.jpg",
+            "images/vehicle28-exterior-front.jpg",
+            "images/vehicle28-exterior-back.jpg",
+            "images/vehicle28-plate.jpg"
+            
+        ]
+            },
+        
         {
         "id": "v0011",
         "make": "TOYOTA",
@@ -200,7 +226,7 @@
         "type": "Hatchback",
         "fuel": "Hybrid",
         "used": true,
-        "price_ksh": "1,299,000 ,Negotiable ",
+        "price_ksh": "SOLD ",
         "condition_type": "Mint Condition, Original Paint,Accident free,Ready Documents",
         "name": "TOYOTA FIELDER 2014 WXB",
         "contact_phone": "+254 757 782887",
