@@ -1,31 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('data/vehicles.json')
+  // Use a root-relative path to help Vercel find the file
+  fetch('/data/vehicles.json') 
     .then(response => {
-      if (!response.ok) throw new Error('Could not load vehicles.json');
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       return response.json();
     })
     .then(vehicles => {
       const container = document.getElementById('vehicle-cards-container');
       if (!container) return;
 
-      // Efficiently build all HTML at once
+      // Efficiently build all HTML as a single string to prevent flickering
       container.innerHTML = vehicles.map(vehicle => {
-        const isSold = vehicle.price_ksh?.toString().toUpperCase() === "SOLD";
+        const isSold = vehicle.price_ksh?.toString().toUpperCase().trim() === "SOLD";
         
-        // Generate Dot Navigation
-        const dotsHtml = vehicle.images.map((_, i) => 
-          `<button data-index="${i}" data-vehicle="${vehicle.id}" class="dot-btn"></button>`
-        ).join('');
+        // Build the Image Gallery and Navigation Dots
+        const imagesHtml = vehicle.images.map(img => `<img src="${img}" alt="${vehicle.name}" loading="lazy">`).join('');
+        const dotsHtml = vehicle.images.map((_, i) => `<button data-index="${i}" data-vehicle="${vehicle.id}" class="dot-btn"></button>`).join('');
 
-        // Generate Image Gallery
-        const imagesHtml = vehicle.images.map(img => 
-          `<img src="${img}" alt="${vehicle.name}" loading="lazy">`
-        ).join('');
-
-        // Handle Price vs Sold Marquee
-        const priceDisplay = isSold 
+        // Handle the Price Display or Sold Marquee
+        const priceSection = isSold 
           ? `<div class="sold-container"><div class="sold-marquee">SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — VISIT DEALER FOR SIMILAR UNITS</div></div>`
-          : `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
+          : `<p><strong>Price:</strong> <span style="color:var(--primary-color); font-weight:bold;">KES ${vehicle.price_ksh}</span></p>`;
 
         return `
           <div class="vehicle-card">
@@ -35,26 +30,30 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="image-nav">${dotsHtml}</div>
             <div class="vehicle-details">
               <h3>${vehicle.name}</h3>
-              ${priceDisplay}
+              ${priceSection}
               <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
               <div class="contact-info">
                 <p><strong>Phone:</strong> <a href="tel:${vehicle.contact_phone.replace(/\s+/g, '')}">${vehicle.contact_phone}</a></p>
               </div>
-              <a href="https://wa.me/${vehicle.contact_phone.replace(/[^0-9]/g, '')}" class="button" style="width:100%; text-align:center; box-sizing:border-box;">Inquire on WhatsApp</a>
+              <a href="https://wa.me/${vehicle.contact_phone.replace(/[^0-9]/g, '')}" class="button" style="display:block; text-align:center; background-color:#25d366; color:white;">WhatsApp Dealer</a>
             </div>
           </div>`;
       }).join('');
 
       setupCarouselAndZoom();
     })
-    .catch(err => console.error("Fetch Error:", err));
+    .catch(err => {
+      console.error("Critical Fetch Error:", err);
+      const container = document.getElementById('vehicle-cards-container');
+      if (container) container.innerHTML = `<p style="color:red; text-align:center;">Failed to load vehicles. Please refresh the page.</p>`;
+    });
 });
 
 function setupCarouselAndZoom() {
   const overlay = document.getElementById('image-zoom-overlay');
   const zoomImg = overlay?.querySelector('img');
 
-  // Single Global Event Listener (Event Delegation) for efficiency
+  // Event Delegation for Dot Navigation and Zooming
   document.addEventListener('click', (e) => {
     // Zoom Logic
     const img = e.target.closest('.vehicle-images img');
@@ -83,6 +82,9 @@ function setupCarouselAndZoom() {
     document.body.style.overflow = '';
   };
 
-  overlay?.addEventListener('click', () => window.history.state?.zoomed ? window.history.back() : closeZoom());
+  overlay?.addEventListener('click', () => {
+    if (window.history.state?.zoomed) window.history.back();
+    else closeZoom();
+  });
   window.addEventListener('popstate', closeZoom);
 }
