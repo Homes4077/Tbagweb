@@ -1,52 +1,52 @@
+let allVehicles = [];
+
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. FETCH VEHICLE DATA
   fetch('data/vehicles.json')
     .then(response => {
       if (!response.ok) throw new Error('Could not load vehicles.json');
       return response.json();
     })
     .then(vehicles => {
+      allVehicles = vehicles;
+      updateStats(vehicles);
       renderVehicles(vehicles);
-      setupFilterLogic(vehicles); // Initialize filters
+      setupFilters();
     })
     .catch(err => console.error("Fetch Error:", err));
 });
 
-function renderVehicles(vehiclesToRender) {
+function updateStats(vehicles) {
+    const total = vehicles.length;
+    const sold = vehicles.filter(v => v.price_ksh?.toString().toUpperCase() === "SOLD").length;
+    document.getElementById('total-count').textContent = total;
+    document.getElementById('available-count').textContent = total - sold;
+    document.getElementById('sold-count').textContent = sold;
+}
+
+function renderVehicles(vehicles) {
   const container = document.getElementById('vehicle-cards-container');
-  if (!container) return;
-  
-  container.innerHTML = ''; // Clear current view
+  container.innerHTML = ''; 
 
-  vehiclesToRender.forEach(vehicle => {
-    const vehicleCard = document.createElement('div');
-    vehicleCard.classList.add('vehicle-card');
-    
-    // Determine fuel type and sold status for filtering badges
-    const isSold = vehicle.price_ksh && vehicle.price_ksh.toString().toUpperCase() === "SOLD";
-    const fuelType = (vehicle.fuel || "Petrol").toLowerCase();
+  vehicles.forEach(vehicle => {
+    const card = document.createElement('div');
+    card.classList.add('vehicle-card');
+    const isSold = vehicle.price_ksh?.toString().toUpperCase() === "SOLD";
+    const cleanPhone = vehicle.contact_phone.replace(/\D/g, '');
 
-    // Gallery & Dots HTML
+    // Blueprint Dot Navigation HTML
     let imageHtml = `<div class="vehicle-images" data-vehicle-id="${vehicle.id}">`;
-    vehicle.images.forEach(img => {
-      imageHtml += `<img src="${img}" alt="${vehicle.name}" class="zoomable">`;
-    });
+    vehicle.images.forEach(img => { imageHtml += `<img src="${img}" class="zoomable">`; });
     imageHtml += '</div><div class="image-nav">';
     vehicle.images.forEach((_, i) => {
       imageHtml += `<button data-index="${i}" data-vehicle="${vehicle.id}" class="dot-btn"></button>`;
     });
     imageHtml += '</div>';
 
-    // Price / Sold Logic
     let priceSection = isSold ? 
-      `<div class="sold-container"><div class="sold-marquee">SOLD — UNIT UNAVAILABLE — SOLD</div></div>` : 
-      `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
+        `<div class="sold-container"><div class="sold-marquee">SOLD — UNIT UNAVAILABLE</div></div>` : 
+        `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
 
-    // WhatsApp logic
-    const cleanPhone = vehicle.contact_phone.replace(/\D/g, '');
-    const whatsappMsg = encodeURIComponent(`Hello TBAG, I'm interested in the ${vehicle.name}.`);
-
-    vehicleCard.innerHTML = `
+    card.innerHTML = `
       <div class="vehicle-details">
         <h3>${vehicle.name}</h3>
         ${imageHtml}
@@ -54,45 +54,62 @@ function renderVehicles(vehiclesToRender) {
         <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
         <div class="contact-info">
           <p><strong>Phone:</strong> ${vehicle.contact_phone}</p>
-          <a href="https://wa.me/${cleanPhone}?text=${whatsappMsg}" target="_blank" class="button" style="background-color:#25D366; display:flex; align-items:center; justify-content:center; gap:8px;">
-            Chat on WhatsApp
-          </a>
+          <a href="https://wa.me/${cleanPhone}?text=I'm interested in ${vehicle.name}" target="_blank" class="button" style="background-color:#25D366;">Chat on WhatsApp</a>
         </div>
-      </div>
-    `;
-    container.appendChild(vehicleCard);
+      </div>`;
+    container.appendChild(card);
   });
-
   setupCarouselAndZoom();
 }
 
-function setupFilterLogic(allVehicles) {
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      // Toggle active class
-      document.querySelector('.filter-btn.active').classList.remove('active');
-      btn.classList.add('active');
-
-      const filterValue = btn.getAttribute('data-filter');
-
-      // Filter the data array
-      const filtered = allVehicles.filter(v => {
-        const isSold = v.price_ksh && v.price_ksh.toString().toUpperCase() === "SOLD";
-        const fuel = (v.fuel || "Petrol").toLowerCase();
-
-        if (filterValue === 'all') return true;
-        if (filterValue === 'available') return !isSold;
-        if (filterValue === 'sold') return isSold;
-        if (filterValue === 'hybrid') return fuel === 'hybrid';
-        if (filterValue === 'petrol') return fuel === 'petrol';
-        return true;
-      });
-
-      renderVehicles(filtered);
+function setupFilters() {
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelector('.filter-btn.active').classList.remove('active');
+            btn.classList.add('active');
+            const f = btn.dataset.filter;
+            const filtered = allVehicles.filter(v => {
+                const isSold = v.price_ksh?.toString().toUpperCase() === "SOLD";
+                const fuel = (v.fuel || "").toLowerCase();
+                if (f === 'all') return true;
+                if (f === 'available') return !isSold;
+                if (f === 'sold') return isSold;
+                return fuel === f;
+            });
+            renderVehicles(filtered);
+        });
     });
-  });
 }
 
-// ... Keep your setupCarouselAndZoom() function exactly as it was in your blueprint
+function setupCarouselAndZoom() {
+  const overlay = document.getElementById('image-zoom-overlay');
+  const zoomImg = overlay.querySelector('img');
+
+  // Zoom / Back Button Logic
+  document.addEventListener('click', (e) => {
+    const img = e.target.closest('.zoomable');
+    if (img) {
+        zoomImg.src = img.src;
+        zoomImg.style.transform = "scale(1)";
+        overlay.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+        window.history.pushState({ zoomed: true }, "");
+    }
+  });
+
+  const closeView = () => { overlay.style.display = 'none'; document.body.style.overflow = ''; };
+
+  overlay.addEventListener('click', () => {
+      if (window.history.state?.zoomed) window.history.back(); else closeView();
+  });
+
+  window.addEventListener('popstate', closeView);
+
+  // Dot Navigation (Blueprint Logic)
+  document.querySelectorAll('.dot-btn').forEach(btn => {
+    btn.onclick = () => {
+        const container = document.querySelector(`.vehicle-images[data-vehicle-id="${btn.dataset.vehicle}"]`);
+        container.scrollTo({ left: container.offsetWidth * btn.dataset.index, behavior: 'smooth' });
+    };
+  });
+}
