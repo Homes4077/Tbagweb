@@ -1,50 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
-    --primary-color: #28a745; 
-    --secondary-color: #007bff; 
-    --dark-bg: #212529; 
-    --light-bg: #e9ecef;
-    --card-bg: #ffffff;
+    --primary-green: #25D366; 
+    --secondary-blue: #007bff; 
+    --accent-gold: #ffc107;   
+    --dark-bg: #1a1d20;      
+    --light-text: #f8f9fa;     
+    --card-bg: #ffffff;        
+    --shadow-premium: 0 10px 30px rgba(0, 0, 0, 0.1);    
 }
 
-body { font-family: 'Open Sans', sans-serif; margin: 0; background-color: var(--light-bg); overflow-x: hidden; }
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0; 
+    background-color: #f4f7f6; 
+    color: #333; 
+    line-height: 1.6; 
+}
 
-/* Stats & Filters */
-.stats-bar { background: #000; color: white; display: flex; justify-content: center; gap: 2rem; padding: 1rem; border-bottom: 3px solid var(--primary-color); }
-.stat strong { display: block; font-size: 1.5rem; color: var(--primary-color); }
-.stat span { font-size: 0.7rem; text-transform: uppercase; color: #aaa; }
+/* Professional Header */
+header { 
+    background: linear-gradient(135deg, #111 0%, #222 100%); 
+    color: var(--light-text); 
+    padding: 1.5rem 0; 
+    border-bottom: 4px solid var(--primary-green);
+}
 
-.filter-bar { margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-.filter-btn { background: #fff; border: 1px solid #ccc; padding: 8px 18px; border-radius: 20px; cursor: pointer; font-weight: 600; }
-.filter-btn.active { background: var(--primary-color); color: white; border-color: var(--primary-color); }
+.header-logo { width: 150px; height: auto; transition: 0.3s; }
+header h1 { 
+    font-family: 'Montserrat', sans-serif; 
+    color: var(--primary-green); 
+    font-size: 1.8rem; 
+    margin-top: 10px; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
-/* Vehicle Cards */
-.vehicle-listing { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); padding: 20px; }
-.vehicle-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 2rem; }
+nav ul li a { color: var(--light-text); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+nav ul li a:hover { color: var(--primary-green); }
 
-.vehicle-images { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; height: 250px; scroll-behavior: smooth; }
-.vehicle-images::-webkit-scrollbar { display: none; }
-.vehicle-images img { flex: 0 0 100%; width: 100%; height: 100%; object-fit: cover; scroll-snap-align: start; cursor: zoom-in; }
+/* Alive Vehicle Cards */
+.vehicle-listing { 
+    display: grid; 
+    gap: 2.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    padding: 2rem 0;
+}
 
-/* Dots */
-.image-nav { display: flex; justify-content: center; gap: 8px; padding: 10px; }
-.dot-btn { width: 12px; height: 12px; border-radius: 50%; border: 1px solid #ccc; background: #eee; cursor: pointer; padding: 0; }
+.vehicle-card { 
+    border-radius: 15px; 
+    overflow: hidden; 
+    background: white; 
+    box-shadow: var(--shadow-premium);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.vehicle-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.vehicle-images { 
+    height: 250px; 
+    display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+}
+
+.vehicle-images img { 
+    flex: 0 0 100%; 
+    width: 100%; 
+    object-fit: cover; 
+    scroll-snap-align: start; 
+}
+
+/* WhatsApp Link Button */
+.buy-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-green);
+    color: white !important;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.buy-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.02);
+}
 
 /* Sold Marquee */
-@keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
-.sold-container { background: #dc3545; color: white; padding: 8px 0; overflow: hidden; white-space: nowrap; margin: 10px 0; font-weight: bold; }
-.sold-marquee { display: inline-block; animation: marquee 10s linear infinite; }
-
-/* Zoom Overlay */
-.zoom-overlay { 
-    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-    background: rgba(0,0,0,0.95); z-index: 10000; justify-content: center; align-items: center; 
-    touch-action: none;
-}
-.zoom-overlay img { 
-    max-width: 95%; max-height: 90%; transition: transform 0.3s ease; 
-    touch-action: pinch-zoom; 
+.sold-container {
+    background: #dc3545;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px 0;
 }
 
-.button { display: block; text-align: center; background: var(--primary-color); color: white; padding: 12px; border-radius: 8px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+/* Other Sections */
+section { padding: 4rem 2rem; max-width: 1200px; margin: auto; }
+.hero { text-align: center; background: white; border-radius: 20px; margin-top: 2rem; }
+.button { background: var(--primary-green); color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: bold; display: inline-block; }
