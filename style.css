@@ -1,0 +1,194 @@
+/* --- GOOGLE FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* --- ROOT VARIABLES --- */
+:root {
+    --primary-color: #28a745; 
+    --secondary-color: #007bff; 
+    --dark-bg: #111;
+    --light-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --text-dark: #333;
+    --text-light: #fff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* --- BASE STYLES --- */
+* { box-sizing: border-box; }
+
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0; 
+    background-color: #e9ecef; 
+    color: var(--text-dark); 
+    line-height: 1.6;
+}
+
+/* --- HEADER & NAVIGATION --- */
+header { 
+    background-color: var(--dark-bg); 
+    color: var(--text-light); 
+    padding: 2rem 0; 
+    text-align: center; 
+}
+.header-logo { width: 120px; height: auto; margin-bottom: 10px; }
+header h1 { 
+    font-family: 'Montserrat', sans-serif; 
+    color: var(--primary-color); 
+    font-size: 1.6rem; 
+    margin: 0; 
+    padding: 0 10px;
+}
+nav ul { 
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    margin-top: 15px; 
+}
+nav ul li a { color: var(--text-light); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+
+/* --- STATS BAR --- */
+.stats-bar { 
+    background: #000; 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    gap: 2rem; 
+    padding: 1rem; 
+    flex-wrap: wrap; 
+    border-bottom: 3px solid var(--primary-color); 
+}
+.stat { text-align: center; }
+.stat strong { display: block; font-size: 1.3rem; color: var(--primary-color); font-family: 'Montserrat', sans-serif; }
+.stat span { font-size: 0.7rem; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+
+/* --- HERO SECTION --- */
+.hero { 
+    text-align: center; 
+    padding: 4rem 1.5rem; 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/hero-bg.jpg'); 
+    background-size: cover; 
+    color: white; 
+}
+
+/* --- FILTER BUTTONS --- */
+.filter-bar { 
+    margin: 25px 0; 
+    display: flex; 
+    gap: 8px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+.filter-btn { 
+    background: white; 
+    border: 1px solid var(--border-color); 
+    padding: 8px 16px; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    font-weight: 600; 
+    transition: 0.3s;
+    font-size: 0.85rem;
+}
+.filter-btn.active, .filter-btn:hover { 
+    background: var(--primary-color); 
+    color: white; 
+    border-color: var(--primary-color); 
+}
+
+/* --- VEHICLE CARDS --- */
+.vehicle-listing { 
+    display: grid; 
+    gap: 1.5rem; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    padding: 10px;
+}
+.vehicle-card { 
+    background: var(--card-bg); 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: var(--shadow); 
+    border: 1px solid var(--border-color);
+}
+
+.vehicle-images { 
+    display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    height: 250px; 
+    background: #eee; 
+    position: relative; 
+}
+.vehicle-images::-webkit-scrollbar { display: none; }
+.vehicle-images img { 
+    flex: 0 0 100%; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    scroll-snap-align: start; 
+}
+
+/* --- BADGES & MARQUEE --- */
+.fuel-badge { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    padding: 4px 10px; 
+    border-radius: 5px; 
+    font-size: 0.7rem; 
+    font-weight: 700; 
+    z-index: 10; 
+    color: white; 
+}
+.fuel-hybrid { background: var(--primary-color); }
+.fuel-petrol { background: var(--secondary-color); }
+
+@keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+.sold-container { background: #d9534f; color: white; padding: 6px 0; overflow: hidden; margin: 10px 0; font-weight: bold; }
+.sold-marquee { display: inline-block; white-space: nowrap; animation: marquee 8s linear infinite; }
+
+/* --- CONTACT & BUTTONS --- */
+.vehicle-details { padding: 1.2rem; }
+.vehicle-details h3 { margin-top: 0; font-family: 'Montserrat', sans-serif; font-size: 1.2rem; }
+.vehicle-details p { display: flex; justify-content: space-between; border-bottom: 1px solid #f0f0f0; padding: 5px 0; margin: 5px 0; font-size: 0.9rem; }
+
+.button { 
+    display: block; 
+    text-align: center; 
+    background: var(--primary-color); 
+    color: white; 
+    padding: 12px; 
+    border-radius: 8px; 
+    text-decoration: none; 
+    font-weight: 700; 
+    margin-top: 10px; 
+}
+
+/* --- ZOOM OVERLAY (MOBILE OPTIMIZED) --- */
+#image-zoom-overlay { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.95); 
+    z-index: 99999; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: auto;
+    touch-action: none; /* Prevents site scrolling behind image */
+}
+#image-zoom-overlay img { 
+    max-width: 95%; 
+    max-height: 85%; 
+    border-radius: 4px; 
+    transition: transform 0.3s ease; 
+    touch-action: pinch-zoom; /* Enables mobile pinch zoom */
+}
+
+/* --- FOOTER --- */
+footer { background: #000; color: #666; padding: 2rem; text-align: center; font-size: 0.8rem; }
