@@ -1,90 +1,118 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Use a root-relative path to help Vercel find the file
-  fetch('/data/vehicles.json') 
+  // 1. FETCH VEHICLE DATA
+  fetch('data/vehicles.json')
     .then(response => {
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      if (!response.ok) throw new Error('Could not load vehicles.json');
       return response.json();
     })
     .then(vehicles => {
       const container = document.getElementById('vehicle-cards-container');
       if (!container) return;
 
-      // Efficiently build all HTML as a single string to prevent flickering
-      container.innerHTML = vehicles.map(vehicle => {
-        const isSold = vehicle.price_ksh?.toString().toUpperCase().trim() === "SOLD";
+      vehicles.forEach(vehicle => {
+        const vehicleCard = document.createElement('div');
+        vehicleCard.classList.add('vehicle-card');
+
+        // Gallery HTML
+        let imageHtml = `<div class="vehicle-images" data-vehicle-id="${vehicle.id}">`;
+        vehicle.images.forEach(img => {
+          imageHtml += `<img src="${img}" alt="${vehicle.name}">`;
+        });
+        imageHtml += '</div><div class="image-nav">';
         
-        // Build the Image Gallery and Navigation Dots
-        const imagesHtml = vehicle.images.map(img => `<img src="${img}" alt="${vehicle.name}" loading="lazy">`).join('');
-        const dotsHtml = vehicle.images.map((_, i) => `<button data-index="${i}" data-vehicle="${vehicle.id}" class="dot-btn"></button>`).join('');
+        // Dot Buttons
+        vehicle.images.forEach((_, i) => {
+          imageHtml += `<button data-index="${i}" data-vehicle="${vehicle.id}" class="dot-btn"></button>`;
+        });
+        imageHtml += '</div>';
 
-        // Handle the Price Display or Sold Marquee
-        const priceSection = isSold 
-          ? `<div class="sold-container"><div class="sold-marquee">SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — VISIT DEALER FOR SIMILAR UNITS</div></div>`
-          : `<p><strong>Price:</strong> <span style="color:var(--primary-color); font-weight:bold;">KES ${vehicle.price_ksh}</span></p>`;
-
-        return `
-          <div class="vehicle-card">
-            <div class="vehicle-images" data-vehicle-id="${vehicle.id}">
-              ${imagesHtml}
-            </div>
-            <div class="image-nav">${dotsHtml}</div>
-            <div class="vehicle-details">
-              <h3>${vehicle.name}</h3>
-              ${priceSection}
-              <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
-              <div class="contact-info">
-                <p><strong>Phone:</strong> <a href="tel:${vehicle.contact_phone.replace(/\s+/g, '')}">${vehicle.contact_phone}</a></p>
+        // SOLD FEATURE LOGIC
+        let priceSection = '';
+        if (vehicle.price_ksh && vehicle.price_ksh.toString().toUpperCase() === "SOLD") {
+          priceSection = `
+            <div class="sold-container">
+              <div class="sold-marquee">
+                SOLD — UNIT NO LONGER AVAILABLE — <span class="badge">SOLD</span> — SOLD — VISIT DEALER FOR SIMILAR UNITS
               </div>
-              <a href="https://wa.me/${vehicle.contact_phone.replace(/[^0-9]/g, '')}" class="button" style="display:block; text-align:center; background-color:#25d366; color:white;">WhatsApp Dealer</a>
-            </div>
-          </div>`;
-      }).join('');
+            </div>`;
+        } else {
+          priceSection = `<p><strong>Price:</strong> <span>KES ${vehicle.price_ksh}</span></p>`;
+        }
 
+        vehicleCard.innerHTML = `
+          <div class="vehicle-details">
+            <h3>${vehicle.name}</h3>
+            ${imageHtml}
+            ${priceSection}
+            <p><strong>Condition:</strong> <span>${vehicle.condition_type}</span></p>
+            <div class="contact-info">
+              <p><strong>Phone:</strong> ${vehicle.contact_phone}</p>
+            </div>
+          </div>
+        `;
+        container.appendChild(vehicleCard);
+      });
+
+      // 2. INITIALIZE ZOOM & NAVIGATION
       setupCarouselAndZoom();
     })
     .catch(err => {
-      console.error("Critical Fetch Error:", err);
-      const container = document.getElementById('vehicle-cards-container');
-      if (container) container.innerHTML = `<p style="color:red; text-align:center;">Failed to load vehicles. Please refresh the page.</p>`;
+      console.error("Fetch Error:", err);
     });
 });
 
 function setupCarouselAndZoom() {
   const overlay = document.getElementById('image-zoom-overlay');
-  const zoomImg = overlay?.querySelector('img');
+  if (!overlay) return; 
 
-  // Event Delegation for Dot Navigation and Zooming
+  const zoomImg = overlay.querySelector('img');
+
+  /* --- FULL VIEW OPEN LOGIC (TAP TO SEE FULL CAR) --- */
   document.addEventListener('click', (e) => {
-    // Zoom Logic
     const img = e.target.closest('.vehicle-images img');
-    if (img && overlay) {
-      zoomImg.src = img.src;
-      overlay.style.display = 'flex';
-      document.body.style.overflow = 'hidden';
-      window.history.pushState({ zoomed: true }, "");
-    }
+    if (!img) return;
 
-    // Dot Navigation Logic
-    const btn = e.target.closest('.dot-btn');
-    if (btn) {
-      const container = document.querySelector(`.vehicle-images[data-vehicle-id="${btn.dataset.vehicle}"]`);
-      if (container) {
-        container.scrollTo({
-          left: container.offsetWidth * btn.dataset.index,
-          behavior: 'smooth'
-        });
-      }
-    }
+    e.stopPropagation();
+    zoomImg.src = img.src;
+    overlay.style.display = 'flex'; // Opens the overlay
+    document.body.style.overflow = 'hidden'; // Prevents scrolling background
+
+    // Back button history state
+    window.history.pushState({ zoomed: true }, "");
   });
 
-  const closeZoom = () => {
-    if (overlay) overlay.style.display = 'none';
+  const closeZoomView = () => {
+    overlay.style.display = 'none';
     document.body.style.overflow = '';
   };
 
-  overlay?.addEventListener('click', () => {
-    if (window.history.state?.zoomed) window.history.back();
-    else closeZoom();
+  overlay.addEventListener('click', () => {
+    if (window.history.state && window.history.state.zoomed) {
+      window.history.back();
+    } else {
+      closeZoomView();
+    }
   });
-  window.addEventListener('popstate', closeZoom);
+
+  window.addEventListener('popstate', () => {
+    closeZoomView();
+  });
+
+  /* --- DOT NAVIGATION --- */
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.image-nav button');
+    if (!btn) return;
+
+    const vehicleId = btn.dataset.vehicle;
+    const index = btn.dataset.index;
+    const container = document.querySelector(`.vehicle-images[data-vehicle-id="${vehicleId}"]`);
+    
+    if (container) {
+      const width = container.offsetWidth;
+      container.scrollTo({
+        left: width * index,
+        behavior: 'smooth'
+      });
+    }
+  });
 }
