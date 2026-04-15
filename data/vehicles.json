@@ -1,4 +1,24 @@
 [  
+          {
+        "id": "v0029",
+        "make": "TOYOTA",
+        "model": "AXIO",
+        "type": "Hatchback",
+        "fuel": "PETROL",
+        "used": true,
+        "price_ksh":"1,100,000 ,Negotiable",
+        "condition_type": "AUTOMATIC GEAR ,Y.O.M 2013,WOODEN TRIM FINISH ON ALLOYRIMS,COOL MUSIC,REVERSE CAMERA,PERFECT SUSPENSION,VERY CLEAN BUY AND DRIVE",
+        "name": "TOYOTA AXIO 1500cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle31-exterior-face.jpg",
+            "images/vehicle31-exterior-side.jpg",
+            "images/vehicle31-plate.jpg",
+            "images/vehicle31-exterior-back.jpg",
+            
+        ]
+            },
         
           {
         "id": "v0028",
