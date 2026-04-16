@@ -71,7 +71,7 @@
         "make": "TOYOTA",
         "model": "VITZ",
         "type": "Hatchback",
-        "fuel": "Hybrid",
+        "fuel": "non-Hybrid",
         "used": true,
         "price_ksh": "580,000 ,NEGOTIABLE",
         "condition_type": "MINT CONDITION, LEATHER SEATS",
