@@ -85,10 +85,7 @@
         "contact_email": "tbagdealers@gmail.com",
         "images": [
             "images/vehicle30-exterior-face.jpg",
-            "images/vehicle30-interior1.jpg",
-            "images/vehicle30.engine.jpg",
-            "images/vehicle30.trunck.jpg",
-            "images/vehicle30-plate.jpg"
+            "images/vehicle30-interior1.jpg"
             
         ]
             },
@@ -203,11 +200,6 @@
         "images": [
             "images/vehicle25-exterior-face.jpg",
             "images/vehicle25-interior1.jpg",
-            "images/vehicle25.engine.jpg",
-            "images/vehicle25-exterior-side.jpg",
-            "images/vehicle25-plate.jpg",
-            "images/vehicle25-exterior-front.jpg",
-            "images/vehicle25-exterior-back.jpg"
             
         ]
             },
