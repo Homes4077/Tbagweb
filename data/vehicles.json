@@ -1,4 +1,29 @@
 [
+    {
+        "id": "v0032",
+        "make": "TOYOTA",
+        "model": "WISH",
+        "type": "Hatchback",
+        "fuel": "nonHybrid",
+        "used": true,
+        "price_ksh": "1,100,000",
+        "condition_type": "mileage 180k,Leather seats, Cruise Control, Brake pads both front and rear ,Y.O.M 2013 ",
+        "name": "TOYOTA WISH 1800cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle34-exterior-face.jpg",
+            "images/vehicle34-interior1.jpg",
+            "images/vehicle34-interior2.jpg",
+            "images/vehicle34-interior3.jpg",
+            "images/vehicle34-interior4.jpg",
+            "images/vehicle34-exterior-side.jpg",
+            "images/vehicle34-exterior-front.jpg",
+            "images/vehicle34-exterior-back.jpg",
+            "images/vehicle34-plate.jpg"
+            
+        ]
+            },
     
           {
         "id": "v0031",
