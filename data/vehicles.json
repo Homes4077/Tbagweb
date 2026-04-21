@@ -1,5 +1,28 @@
 [
     {
+        "id": "v0033",
+        "make": "TOYOTA",
+        "model": "COROLLA",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "370,000 ,Negotiable",
+        "condition_type": "mileage 233337, Automatic, Black interior",
+        "name": "TOYOTA COROLLA 1490cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle35-exterior-face.jpg",
+            "images/vehicle35-interior1.jpg",
+            "images/vehicle35-interior2.jpg",
+            "images/vehicle35.engine.jpg",
+            "images/vehicle35-exterior-side.jpg",
+            "images/vehicle35-exterior-back.jpg",
+            "images/vehicle35-plate.jpg"
+            
+        ]
+            },
+    {
         "id": "v0032",
         "make": "TOYOTA",
         "model": "WISH",
