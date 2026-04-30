@@ -1,5 +1,22 @@
 [
     {
+        "id": "v0034",
+        "make": "TOYOTA",
+        "model": "Hilux",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "Export from UAE ,shipment available for 50% Advance",
+        "condition_type": "4WD, Automatic, Well Maintained,mileage 34600km, SERIOUS BUYER'S ONLY",
+        "name": "TOYOTA HILUX REVO 2400cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle36-exterior-face.jpg",
+
+        ]
+            },
+    {
         "id": "v0033",
         "make": "TOYOTA",
         "model": "COROLLA",
