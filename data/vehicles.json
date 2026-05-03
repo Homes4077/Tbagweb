@@ -1,6 +1,33 @@
 [
     
     {
+        "id": "v0037",
+        "make": "TOYOTA",
+        "model": "VITZ",
+        "type": "Hatchback",
+        "fuel": "Non-Hybrid",
+        "used": true,
+        "price_ksh": "548,000 , Slightly Negotiable",
+        "condition_type": "Low mileage, Y.o.m 2009, Buy & drive, Trade-in acceptable",
+        "name": "Toyota vitz 1000cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle39-exterior-face.jpg",
+            "images/vehicle39-interior1.jpg",
+            "images/vehicle39-interior2.jpg",
+            "images/vehicle39-interior3.jpg",
+            "images/vehicle39.engine.jpg",
+            "images/vehicle39-exterior-side.jpg",
+            "images/vehicle39-exterior-front.jpg",
+            "images/vehicle37-trunck.jpg",
+            "images/vehicle37.plate.jpg"
+            
+        ]
+    },
+
+    
+    {
         "id": "v0036",
         "make": "TOYOTA",
         "model": "ALLION",
