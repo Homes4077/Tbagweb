@@ -1,4 +1,32 @@
 [
+     
+    {
+        "id": "v0038",
+        "make": "TOYOTA",
+        "model": "NZE",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "695,000 ,Negotiable",
+        "condition_type": "2 WD, Accident free, Extremely Clean, Trade in also accepted",
+        "name": "TOYOTA NZE 1500cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle40-exterior-face.jpg",
+            "images/vehicle40-interior1.jpg",
+            "images/vehicle40-interior2.jpg",
+            "images/vehicle40-interior3.jpg",
+            "images/vehicle40.engine.jpg",
+            "images/vehicle40-exterior-side.jpg",
+            "images/vehicle40-exterior-side1.jpg",
+            "images/vehicle40-exterior-front.jpg",
+            "images/vehicle40-exterior-back.jpg",
+            "images/vehicle40.plate.jpg"
+            
+        ]
+    }
+    
     
     {
         "id": "v0037",
