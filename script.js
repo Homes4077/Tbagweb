@@ -42,7 +42,7 @@ function renderVehicles(vehicles) {
         const isSold = vehicle.price_ksh.toString().toUpperCase() === "SOLD";
         const fuel = (vehicle.fuel || "Petrol").toLowerCase();
         const cleanPhone = vehicle.contact_phone.replace(/\D/g, '');
-        const whatsappMsg = encodeURIComponent(`Hello TBAG, I am interested in the ${vehicle.name}.`);
+        const whatsappMsg = encodeURIComponent(`Hello Cyrus, I am interested in the ${vehicle.name}.`);
 
         const card = document.createElement('div');
         card.className = 'vehicle-card';
