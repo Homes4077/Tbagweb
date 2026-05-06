@@ -3,8 +3,9 @@
 
 /* --- ROOT VARIABLES --- */
 :root {
-    --primary-color: #28a745; 
-    --secondary-color: #007bff; 
+    --primary-color: #C3B091; 
+    --secondary-color: #FFFDD0; 
+    --accent-color: #E6D3B3; 
     --dark-bg: #111;
     --light-bg: #f8f9fa;
     --card-bg: #ffffff;
@@ -145,6 +146,7 @@ nav ul li a { color: var(--text-light); text-decoration: none; font-weight: 600;
 }
 .fuel-hybrid { background: var(--primary-color); }
 .fuel-petrol { background: var(--secondary-color); }
+.fuel-diesel { background: var(--accent-color); }
 
 @keyframes marquee { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
 .sold-container { background: #d9534f; color: white; padding: 6px 0; overflow: hidden; margin: 10px 0; font-weight: bold; }
