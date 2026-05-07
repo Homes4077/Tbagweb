@@ -1,6 +1,30 @@
 [
      
     {
+        "id": "v0040",
+        "make": "TOYOTA",
+        "model": "Fielder",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "1,200,000",
+        "condition_type": "2 WD, Accident free, MintCondition, Y.O.M 2013",
+        "name": "TOYOTA FIELDER 1500cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle42-exterior-face.jpg",
+            "images/vehicle42-interior1.jpg",
+            "images/vehicle42.engine.jpg",
+            "images/vehicle42-exterior-side.jpg",
+            "images/vehicle42-exterior-front.jpg",
+            "images/vehicle42-exterior-back.jpg",
+            "images/vehicle42-plate.jpg"
+            
+        ]
+    },
+     
+    {
         "id": "v0039",
         "make": "Land",
         "model": "CRUISER ",
