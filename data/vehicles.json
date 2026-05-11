@@ -5,7 +5,7 @@
         "make": "TOYOTA",
         "model": "Fielder",
         "type": "Hatchback",
-        "fuel": "Hybrid",
+        "fuel": "non-Hybrid",
         "used": true,
         "price_ksh": "1,480,000 ,Negotiable",
         "condition_type": "2 WD, Well Maintained,Accident free, MintCondition, Y.O.M 2016",
