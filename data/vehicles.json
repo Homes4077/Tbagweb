@@ -1,5 +1,28 @@
 [
-     
+   
+    {
+        "id": "v0043",
+        "make": "TOYOTA",
+        "model": "Fielder",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,480,000 ,Negotiable",
+        "condition_type": "2 WD, Well Maintained,Accident free, MintCondition, Y.O.M 2016",
+        "name": "TOYOTA FIELDER 1500cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle45-exterior-face.jpg",
+            "images/vehicle45-interior1.jpg",
+            "images/vehicle45.engine.jpg",
+            "images/vehicle45-exterior-side.jpg",
+            "images/vehicle45-exterior-front.jpg",
+            "images/vehicle45-exterior-back.jpg",
+            "images/vehicle45-plate.jpg"
+            
+        ]
+    },  
      
     {
         "id": "v0042",
