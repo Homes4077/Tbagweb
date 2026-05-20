@@ -1,6 +1,27 @@
 [
    
     {
+        "id": "v0044",
+        "make": "TOYOTA",
+        "model": "Fielder",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "1,350,000 ,Negotiable",
+        "condition_type": "Well Maintained,Accident free, MintCondition",
+        "name": "TOYOTA FIELDER 1500cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle46-exterior-face.jpg",
+            "images/vehicle46-interior1.jpg",
+            "images/vehicle46.engine.jpg",
+            "images/vehicle46-exterior-side.jpg",
+            "images/vehicle46-exterior-back.jpg"
+            
+        ]
+    },
+    {
         "id": "v0043",
         "make": "TOYOTA",
         "model": "Fielder",
