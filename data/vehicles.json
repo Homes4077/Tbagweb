@@ -1,6 +1,35 @@
 [
    
     {
+        "id": "v0049",
+        "make": "HONDA",
+        "model": "DAA-RU3",
+        "type": "Hatchback",
+        "fuel": "Hybrid Z",
+        "used": true,
+        "price_ksh": "2,150,000 ",
+        "condition_type": "Acceleration: 0-100kph/8.5s, Fuel consumption: 4.8L/100Kms,Engine position: Front, Transverse,Upholstery: Fabric/Leather,Fuel tank Capacity: 40L,Transmission: CVT, Tyre size: 215/55R17, Ground clearance: 6.7In",
+        "name": "HONDA VEZEL 1496cc .KDP",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle51-exterior-face.jpg",
+            "images/vehicle51-interior1.jpg",
+            "images/vehicle51-interior2.jpg",
+            "images/vehicle51-interior3.jpg",
+            "images/vehicle51-interior4.jpg",
+            "images/vehicle51.engine.jpg",
+            "images/vehicle51-exterior-front.jpg",
+            "images/vehicle51-exterior-side.jpg",
+            "images/vehicle51-exterior-side1.jpg",
+            "images/vehicle51-exterior-back.jpg",
+            "images/vehicle51-trunck.jpg",
+            "images/vehicle51-plate.jpg"
+            
+        ]
+    },
+   
+    {
         "id": "v0048",
         "make": "TOYOTA",
         "model": "AURIS",
