@@ -1,6 +1,30 @@
 [
    
     {
+        "id": "v0051",
+        "make": "Subaru",
+        "model": "FORESTER",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "1,049,000 ,Negotiable",
+        "condition_type": "Automatic transmission, Blister Shocks, Great Suspension, Mechanically Excellent, Super Clean Neat Original Gray Interior, Y.O.M 2007",
+        "name": "SUBARU FORESTER SG9 2000cc Turbo Charged",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle53-exterior-face.jpg",
+            "images/vehicle53-interior1.jpg",
+            "images/vehicle53.engine.jpg",
+            "images/vehicle53-exterior-front.jpg",
+            "images/vehicle53-exterior-side.jpg",
+            "images/vehicle53-exterior-back.jpg",
+            "images/vehicle53-trunck.jpg"
+            
+        ]
+    }
+   
+    {
         "id": "v0050",
         "make": "MAZDA",
         "model": "AXELA",
