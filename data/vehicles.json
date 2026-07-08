@@ -1,4 +1,55 @@
 [
+    
+    {
+        "id": "v0056",
+        "make": "TOYOTA",
+        "model": "RACTIS",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "890,000 ,Negotiable",
+        "condition_type": "2 WD, Original Paint ,Accident free, MintCondition, Buy & Drive ",
+        "name": "TOYOTA RACTIS 2012 1500cc. KCR ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle58-exterior-face.jpg",
+            "images/vehicle58-exterior-front.jpg",
+            "images/vehicle58-exterior-back.jpg"
+            
+            
+        ]
+    },
+    
+    {
+        "id": "v0055",
+        "make": "TOYOTA",
+        "model": "VOXY",
+        "type": "Hatchback",
+        "fuel": "PETROL",
+        "used": true,
+        "price_ksh": "1,860,000 ,Negotiable",
+        "condition_type": "Well Maintained,Accident free, Fabric Seats ,7 Seater, Original Paint, READY DOCUMENTS",
+        "name": "TOYOTA VOXY 2017 2000cc Valve Matic.KDH",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle57-exterior-face.jpg",
+            "images/vehicle57-interior.jpg",
+            "images/vehicle57-interior1.jpg",
+            "images/vehicle57-interior2.jpg",
+            "images/vehicle57-interior3.jpg",
+            "images/vehicle57.engine.jpg",
+            "images/vehicle57-exterior-front.jpg",
+            "images/vehicle57-exterior-side.jpg",
+            "images/vehicle57-exterior-side1.jpg",
+            "images/vehicle57-exterior-back.jpg",
+            "images/vehicle57-trunck.jpg",
+            "images/vehicle57-plate.jpg"
+            
+        ]
+    },
+    
 
     
     {
@@ -8,7 +59,7 @@
         "type": "Hatchback",
         "fuel": "Petrol",
         "used": true,
-        "price_ksh": "1,450,000 ",
+        "price_ksh": "1,480,000 ",
         "condition_type": "2 WD, Acceleration: 0–100kph/9.0s ,Fuel consumption: 5.8L/100Kms ,Engine code: PE-VPS , Engine oil capacity: 4.2L, Fuel tank Capacity: 51L, Transmission: Automatic, Tyre size: 205/60R16, Ground clearance: 6.1In...",
         "name": "MAZDA AXELA 2015 1496cc. KDK",
         "contact_phone": "+254 757 782887",
