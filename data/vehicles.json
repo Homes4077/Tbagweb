@@ -1,6 +1,61 @@
 [
     
     {
+        "id": "v0058",
+        "make": "TOYOTA",
+        "model": "HIACE",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "2,880,000 ,Negotiable",
+        "condition_type": " AWD, Original Paint,Accident free, MintCondition, Automatic transmission, 14 seater ,Buy & Drive",
+        "name": "TOYOTA HIACE 7L 2016 3000cc .KDR",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle60-exterior-face.jpg",
+            "images/vehicle60-interior1.jpg",
+            "images/vehicle60-interior1.jpg",
+            "images/vehicle60.engine.jpg",
+            "images/vehicle60-exterior-front.jpg",
+            "images/vehicle60-exterior-front1.jpg",
+            "images/vehicle60-exterior-side.jpg",
+            "images/vehicle37-exterior-side2.jpg",
+            "images/vehicle60-exterior-back.jpg",
+            "images/vehicle60-trunck.jpg",
+            "images/vehicle60.plate.jpg"
+            
+        ]
+    },
+
+    {
+        "id": "v0057",
+        "make": "Suzuki",
+        "model": "Swift",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "670,000 ,Negotiable",
+        "condition_type": " Well Maintained,Accident Free,Trade-In Accepted, Financing Accepted,Buy & Drive ,Y.O.M 2013",
+        "name": "Suzuki Swift 1300cc .KDA",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle59-exterior-face.jpg",
+            "images/vehicle59-interior.jpg",
+            "images/vehicle59-interior1.jpg",
+            "images/vehicle59-interior2.jpg",
+            "images/vehicle59.engine.jpg",
+            "images/vehicle59-exterior-side.jpg",
+            "images/vehicle59-exterior-front.jpg",
+            "images/vehicle59-exterior-back.jpg",
+            "images/vehicle59-trunck.jpg"
+            
+        ]
+    },
+    
+    
+    {
         "id": "v0056",
         "make": "TOYOTA",
         "model": "RACTIS",
