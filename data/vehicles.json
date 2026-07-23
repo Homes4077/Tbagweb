@@ -1,6 +1,29 @@
 [
     
     {
+        "id": "v0059",
+        "make": "TOYOTA",
+        "model": "Fielder",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,720,000 ",
+        "condition_type": " Well Maintained,Accident free,  1.5L 1NZ-FXE 4-cylinder petrol engine paired with Toyota's Hybrid Synergy Drive",
+        "name": "TOYOTA FIELDER 2016 1500cc",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle61-exterior-face.jpg",
+            "images/vehicle61-exterior-front.jpg",
+            "images/vehicle61-exterior-front1.jpg",
+            "images/vehicle61-exterior-side.jpg",
+            "images/vehicle61-exterior-back.jpg",
+            "images/vehicle61-tire.jpg",
+            "images/vehicle61-plate.jpg"
+            
+        ]
+    },
+    {
         "id": "v0058",
         "make": "TOYOTA",
         "model": "HIACE",
