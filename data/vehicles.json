@@ -1,6 +1,32 @@
 [
     
     {
+        "id": "v0060",
+        "make": "TOYOTA",
+        "model": "FIELDER",
+        "type": "Hatchback",
+        "fuel": "Non-Hybrid",
+        "used": true,
+        "price_ksh": "1,680,000 ,Negotiable",
+        "condition_type": "2 WD, Original Paint,Accident free, MintCondition, Buy and Drive ",
+        "name": "TOYOTA FIELDER 1500cc .KDR",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle62-exterior-face.jpg",
+            "images/vehicle62-interior.jpg",
+            "images/vehicle62-interior1.jpg",
+            "images/vehicle62-interior3.jpg",
+            "images/vehicle62-exterior-front.jpg",
+            "images/vehicle62-exterior-side.jpg",
+            "images/vehicle62-exterior-side1.jpg",
+            "images/vehicle62-trunck.jpg",
+            "images/vehicle62.plate.jpg"
+            
+        ]
+    },
+    
+    {
         "id": "v0059",
         "make": "TOYOTA",
         "model": "Fielder",
@@ -226,12 +252,17 @@
         "contact_email": "tbagdealers@gmail.com",
         "images": [
             "images/vehicle53-exterior-face.jpg",
+            "images/vehicle53-interior.jpg",
             "images/vehicle53-interior1.jpg",
             "images/vehicle53.engine.jpg",
+            "images/vehicle53-exterior-side2.jpg",
+            "images/vehicle53-exterior-front.jpg",
             "images/vehicle53-exterior-front.jpg",
             "images/vehicle53-exterior-side.jpg",
+            "images/vehicle53-exterior-side1.jpg",
             "images/vehicle53-exterior-back.jpg",
-            "images/vehicle53-trunck.jpg"
+            "images/vehicle53-trunck.jpg",
+            "images/vehicle53-plate.jpg"
             
         ]
     },
