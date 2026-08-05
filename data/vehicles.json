@@ -1,6 +1,30 @@
 [
     
     {
+        "id": "v0061",
+        "make": "TOYOTA",
+        "model": "PREMIO",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,220,000 ,Negotiable",
+        "condition_type": "2 WD,Accident free, Original Paint, Trade-In Accepted ,Ready Documents",
+        "name": "TOYOTA AXIO 2014 1500cc.KDD",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle63-exterior-face.jpg",
+            "images/vehicle63-interior.jpg",
+            "images/vehicle63-interior1.jpg",
+            "images/vehicle63-interior2.jpg",
+            "images/vehicle63.engine.jpg",
+            "images/vehicle63-exterior-side.jpg",
+            "images/vehicle63-exterior-front.jpg",
+            "images/vehicle63-exterior-back.jpg"
+            
+        ]
+    }
+    {
         "id": "v0060",
         "make": "TOYOTA",
         "model": "FIELDER",
