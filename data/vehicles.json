@@ -1,5 +1,33 @@
 [
     
+        {
+        "id": "v0062",
+        "make": "MAZDA",
+        "model": "CX5",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "2,669,000 ,Negotiable",
+        "condition_type": "Mint Condition,Accident free, Original Paint,Low mileage, Buy & Drive",
+        "name": "MAZDA CX5 2000cc.KDS",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle64-exterior-face.jpg",
+            "images/vehicle64-interior1.jpg",
+            "images/vehicle64-interior2.jpg",
+            "images/vehicle64-interior3.jpg",
+            "images/vehicle64-interior4.jpg",
+            "images/vehicle64-engine.jpg",
+            "images/vehicle64-exterior-front.jpg",
+            "images/vehicle64-exterior-front1.jpg",
+            "images/vehicle64-exterior-side.jpg",
+            "images/vehicle64-trunk.jpg",
+            "images/vehicle64-plate.jpg"
+            
+        ]
+    },
+    
     {
         "id": "v0061",
         "make": "TOYOTA",
