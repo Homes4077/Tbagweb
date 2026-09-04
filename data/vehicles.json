@@ -1,4 +1,30 @@
 [
+     
+        {
+        "id": "v0064",
+        "make": "TOYOTA",
+        "model": "Dx",
+        "type": "Hatchback",
+        "fuel": "Diesel",
+        "used": true,
+        "price_ksh": "420,000 ,Negotiable",
+        "condition_type":Automatic, Leaf Spring, Well Maintained ",
+        "name": "TOYOTA DX102 1500cc ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle66-exterior-face.jpg",
+            "images/vehicle66-interior1.jpg",
+            "images/vehicle66-interior2.jpg",
+            "images/vehicle66-exterior-front.jpg",
+            "images/vehicle66-exterior-side.jpg",
+            "images/vehicle66-exterior-side1.jpg",
+            "images/vehicle66-plate.jpg",
+            
+            
+        ]
+    },
+    
     
         {
         "id": "v0063",
