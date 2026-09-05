@@ -1,4 +1,30 @@
-[
+[ 
+     
+             {
+        "id": "v0065",
+        "make": "TOYOTA",
+        "model": "FIELDER",
+        "type": "Hatchback",
+        "fuel": "Petrol",
+        "used": true,
+        "price_ksh": "1,080,000 ,Negotiable",
+        "condition_type": "AWD ,Mint Condition,Accident free , Y.O.M 2011 , Buy & Drive",
+        "name": "TOYOTAFIELDER 1500cc.KCQ",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle67-exterior-face.jpg",
+            "images/vehicle67-interior1.jpg",
+            "images/vehicle67-interior2.jpg",
+            "images/vehicle67-engine.jpg",
+            "images/vehicle67-exterior-front.jpg",
+            "images/vehicle67-exterior-front1.jpg",
+            "images/vehicle67-exterior-side.jpg",
+            "images/vehicle67-trunck.jpg",
+            "images/vehicle67-plate.jpg"
+            
+        ]
+    },
      
         {
         "id": "v0064",
