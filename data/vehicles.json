@@ -1,4 +1,27 @@
-[ 
+[  
+      {
+        "id": "v0066",
+        "make": "hONDA",
+        "model": "VEZEL",
+        "type": "Hatchback",
+        "fuel": "HYBRID Z",
+        "used": true,
+        "price_ksh": "2,450,000 ,Negotiable",
+        "condition_type": " Acceleration: 0-100kph/8.5s ,Fuel consumption: 4.8L/100Kms ,Engine oil capacity: 3.6L ,Model code: DAA-RU3 ,Upholstery: Fabric/Leather , CO₂ emissions: 112g/km ,Fuel tank Capacity: 40L, Transmission: CVT",
+        "name": "HONDA VEZEL 1496cc .KDR",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle68-exterior-face.jpg",
+            "images/vehicle68-interior1.jpg",
+            "images/vehicle68-interior2.jpg",
+            "images/vehicle68-engine.jpg",
+            "images/vehicle68-exterior-front.jpg",
+            "images/vehicle68-exterior-side.jpg",
+            "images/vehicle68-plate.jpg"
+            
+        ]
+    },
      
              {
         "id": "v0065",
