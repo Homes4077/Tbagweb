@@ -1,4 +1,31 @@
 [  
+            {
+        "id": "v0068",
+        "make": "TOYOTA",
+        "model": "FIELDER",
+        "type": "Hatchback",
+        "fuel": "Hybrid",
+        "used": true,
+        "price_ksh": "1,850,000 ,Negotiable",
+        "condition_type": "Fresh Import, Accident Free, Original Paint, 2 WD ,Trade-In Accepted,  Ready Documents, Y.O.M 2020",
+        "name": "TOYOTA FIELDER 1500cc. KDA",
+        "contact_phone": "+254 757 782887",
+        "contact_email": "tbagdealers@gmail.com",
+        "images": [
+            "images/vehicle70-exterior-face.jpg",
+            "images/vehicle70-interior.jpg",
+            "images/vehicle70-interior1.jpg",
+            "images/vehicle70-interior2.jpg",
+            "images/vehicle70.engine.jpg",
+            "images/vehicle70-exterior-front.jpg",
+            "images/vehicle70-exterior-side.jpg",
+            "images/vehicle70-exterior-side1.jpg",
+            "images/vehicle70-exterior-back.jpg",
+            "images/vehicle70-trunck.jpg",
+            "images/vehicle70-plate.jpg"
+            
+        ]
+            },
       
       {
         "id": "v0067",
